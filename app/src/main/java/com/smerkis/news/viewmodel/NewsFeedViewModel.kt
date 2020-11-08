@@ -1,33 +1,24 @@
 package com.smerkis.news.viewmodel
 
 import androidx.lifecycle.LiveData
-import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.Transformations
-import androidx.lifecycle.ViewModel
 import androidx.paging.LivePagedListBuilder
-import androidx.paging.PagedList
 import com.smerkis.news.datasource.NewsDataFactory
-import com.smerkis.news.model.ArticleStructure
+import com.smerkis.news.repo.NewsRepository
+import com.smerkis.news.utils.pagedListConfig
 import com.utsman.recycling.paged.extentions.NetworkState
 
-class NewsFeedViewModel : ViewModel() {
+class NewsFeedViewModel(repo: NewsRepository) : BaseViewModel() {
 
-    private var pagingDataFactory: NewsDataFactory? = null
+    private val newsDataSours = NewsDataFactory(repo, ioScope)
 
-    private fun configPaged(size: Int): PagedList.Config = PagedList.Config.Builder()
-        .setPageSize(size)
-        .setInitialLoadSizeHint(size * 2)
-        .setEnablePlaceholders(true)
-        .build()
+    val articles = LivePagedListBuilder(newsDataSours, pagedListConfig()).build()
+    val networkState: LiveData<NetworkState> =
+        Transformations.switchMap(newsDataSours.dataSource) { it.networkState }
 
-    fun getCuratedPhoto(): LiveData<PagedList<ArticleStructure>> {
-        pagingDataFactory = NewsDataFactory()
-        return LivePagedListBuilder(pagingDataFactory!!, configPaged(4)).build()
-    }
+    fun refreshAllList() =
+        newsDataSours.getSource()?.refresh()
 
-    fun getLoader(): LiveData<NetworkState> = Transformations.switchMap(
-        pagingDataFactory?.pagingLiveData!!
-    ) { it.networkState }
 
 
 }

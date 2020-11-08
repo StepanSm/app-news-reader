@@ -2,7 +2,7 @@ package com.smerkis.news.di
 
 import com.google.gson.GsonBuilder
 import com.jakewharton.retrofit2.adapter.kotlin.coroutines.CoroutineCallAdapterFactory
-import com.smerkis.news.api.ApiInterface
+import com.smerkis.news.api.NewsApi
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
 import org.koin.dsl.module
@@ -36,5 +36,6 @@ val networkModule = module {
             .build()
     }
 
-    factory { get<Retrofit>().create(ApiInterface::class.java) }
+    //NewsApi
+    factory { get<Retrofit>().create(NewsApi::class.java) }
 }

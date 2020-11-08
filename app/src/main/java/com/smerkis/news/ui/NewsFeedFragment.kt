@@ -2,6 +2,7 @@ package com.smerkis.news.ui
 
 import android.os.Bundle
 import android.view.View
+import android.widget.Toast
 import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -25,8 +26,8 @@ class NewsFeedFragment : Fragment(R.layout.fragment_news_feed),
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         viewBinding.swipeRefreshLayout.setOnRefreshListener(this)
-
-
+        viewBinding.swipeRefreshLayout.setColorSchemeResources(R.color.colorPrimary)
+        viewBinding.swipeRefreshLayout.isRefreshing = true
 
         viewBinding.recyclerView.setupAdapterPaged<ArticleStructure>(R.layout.card_row) { adapter, context, list ->
 
@@ -43,12 +44,12 @@ class NewsFeedFragment : Fragment(R.layout.fragment_news_feed),
                 idTextError = R.id.error_text_view
             }
 
-            model.getCuratedPhoto().observe(viewLifecycleOwner) {
-                viewBinding.swipeRefreshLayout.isRefreshing = false
+            model.articles.observe(viewLifecycleOwner) {
                 submitList(it)
+                viewBinding.swipeRefreshLayout.isRefreshing = false
             }
 
-            model.getLoader().observe(viewLifecycleOwner) {
+            model.networkState.observe(viewLifecycleOwner) {
                 viewBinding.swipeRefreshLayout.isRefreshing = false
                 submitNetwork(it)
             }
@@ -56,6 +57,9 @@ class NewsFeedFragment : Fragment(R.layout.fragment_news_feed),
     }
 
     override fun onRefresh() {
+        viewBinding.swipeRefreshLayout.isRefreshing = true
+
+        model.refreshAllList()
     }
 
 

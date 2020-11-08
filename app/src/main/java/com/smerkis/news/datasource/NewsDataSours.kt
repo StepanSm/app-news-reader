@@ -2,93 +2,63 @@ package com.smerkis.news.datasource
 
 import androidx.lifecycle.MutableLiveData
 import androidx.paging.PageKeyedDataSource
-import com.smerkis.news.ApiClient
-import com.smerkis.news.BuildConfig
-import com.smerkis.news.api.ApiInterface
 import com.smerkis.news.model.ArticleStructure
-import com.smerkis.news.model.NewsResponse
-import com.smerkis.news.utils.loge
-import com.smerkis.news.utils.logi
+import com.smerkis.news.repo.NewsRepository
 import com.utsman.recycling.paged.extentions.NetworkState
-import retrofit2.Call
-import retrofit2.Callback
-import retrofit2.Response
-
-private const val SOURCE = "the-times-of-india"
-private const val SORT_BY = "publishedAt"
-private const val API_KEY = BuildConfig.API_KEY
+import kotlinx.coroutines.*
 
 
-@Suppress("NULLABILITY_MISMATCH_BASED_ON_JAVA_ANNOTATIONS")
-class NewsDataSours : PageKeyedDataSource<Long, ArticleStructure>() {
+class NewsDataSours(
+    private val repository: NewsRepository,
+    private val scope: CoroutineScope
+) : PageKeyedDataSource<Int, ArticleStructure>() {
 
-    var networkState = MutableLiveData<NetworkState>()
-    //  private var page = 1
-
+    private val supervisorJob = SupervisorJob()
+    val networkState = MutableLiveData<NetworkState>()
 
     override fun loadInitial(
-        params: LoadInitialParams<Long>,
-        callback: LoadInitialCallback<Long, ArticleStructure>
+        params: LoadInitialParams<Int>,
+        callback: LoadInitialCallback<Int, ArticleStructure>
     ) {
-        networkState.postValue(NetworkState.LOADING)
-
-        val request = ApiClient.client.create(ApiInterface::class.java)
-        request.getSearchResults("vote", 1, SORT_BY, "en", API_KEY)
-            .enqueue(object : Callback<NewsResponse> {
-
-                override fun onFailure(call: Call<NewsResponse>, t: Throwable) {
-                    loge(t.localizedMessage)
-                    networkState.postValue(NetworkState.error(t.localizedMessage))
-                }
-
-                override fun onResponse(
-                    call: Call<NewsResponse>,
-                    response: Response<NewsResponse>
-                ) {
-                    val body = response.body()
-                    if (body != null) {
-                        logi("eeeeee -- ${body.articles}")
-                        networkState.postValue(NetworkState.LOADED)
-                        logi("aaaaaa -> ${body.articles[0]}")
-                        callback.onResult(body.articles, null, 2)
-                    }
-                }
-            })
+        executeQuery(1, params.requestedLoadSize) {
+            callback.onResult(it, null, 2)
+        }
     }
 
     override fun loadAfter(
-        params: LoadParams<Long>,
-        callback: LoadCallback<Long, ArticleStructure>
+        params: LoadParams<Int>,
+        callback: LoadCallback<Int, ArticleStructure>
     ) {
-        val page = params.key
-        val request = ApiClient.client.create(ApiInterface::class.java)
-        request.getSearchResults("vote", page, SORT_BY, "en", API_KEY)
-            .enqueue(object : Callback<NewsResponse> {
-                override fun onResponse(
-                    call: Call<NewsResponse>,
-                    response: Response<NewsResponse>
-                ) {
-                    val body = response.body()
-                    if (body != null) {
-                        networkState.postValue(NetworkState.LOADING)
-                        callback.onResult(body.articles, page + 1)
-                    }
-
-                }
-
-                override fun onFailure(call: Call<NewsResponse>, t: Throwable) {
-                    loge(t.localizedMessage)
-                    networkState.postValue(NetworkState.error(t.localizedMessage))
-                }
+        executeQuery(params.key, params.requestedLoadSize) {
+            callback.onResult(it, params.key + 1)
+        }
+    }
 
 
-            })
+    private fun executeQuery(page: Int, perPage: Int, callback: (List<ArticleStructure>) -> Unit) {
+        networkState.postValue(NetworkState.LOADING)
+        scope.launch(getJobErrorHandler() + supervisorJob) {
+            val articles = repository.getHeadlines(page, perPage)
+            networkState.postValue(NetworkState.LOADED)
+            callback(articles.articles)
+        }
+    }
+
+    private fun getJobErrorHandler() = CoroutineExceptionHandler { _, throwable ->
+        networkState.postValue(NetworkState.error(throwable.message))
     }
 
     override fun loadBefore(
-        params: LoadParams<Long>,
-        callback: LoadCallback<Long, ArticleStructure>
+        params: LoadParams<Int>,
+        callback: LoadCallback<Int, ArticleStructure>
     ) {
-        TODO("Not yet implemented")
+    }
+
+    fun refresh() =
+        this.invalidate()
+
+    override fun invalidate() {
+        super.invalidate()
+        supervisorJob.cancelChildren()
     }
 }

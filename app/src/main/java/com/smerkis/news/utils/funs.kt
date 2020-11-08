@@ -8,8 +8,10 @@ import android.widget.Toast
 import androidx.databinding.BindingAdapter
 import androidx.fragment.app.FragmentManager
 import androidx.fragment.app.FragmentTransaction
+import androidx.paging.PagedList
 import coil.load
 import coil.request.CachePolicy
+import com.smerkis.news.BuildConfig
 
 fun Any.logi(msg: String) = Log.i(this.javaClass.simpleName, msg)
 fun Any.loge(msg: String) = Log.e(this.javaClass.simpleName, msg)
@@ -28,3 +30,11 @@ fun loadImage(view: ImageView, imageUrl: String?){
             memoryCachePolicy(CachePolicy.DISABLED)
         }
 }
+
+
+
+fun pagedListConfig() = PagedList.Config.Builder()
+    .setInitialLoadSizeHint(5)
+    .setEnablePlaceholders(false)
+    .setPageSize(20)
+    .build()
