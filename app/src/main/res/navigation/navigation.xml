@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/newsFeedFragment">
+
+    <fragment
+
+        android:id="@+id/newsFeedFragment"
+        android:name="com.smerkis.news.ui.NewsFeedFragment"
+        android:label="NewsFeedFragment"
+        tools:layout="@layout/fragment_news_feed">
+        <action
+            android:id="@+id/action_newsFeedFragment_to_articleFragment"
+            app:destination="@id/fragment_article"
+            app:enterAnim="@anim/pull_in_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragment_article"
+        android:name="com.smerkis.news.ui.ArticleFragment"
+        android:label="Article"
+        tools:layout="@layout/fragment_article">
+        <argument
+            android:name="title"
+            app:argType="string" />
+        <argument
+            android:name="description"
+            app:argType="string" />
+        <argument
+            android:name="date"
+            app:argType="string" />
+        <argument
+            android:name="imgURL"
+            app:argType="string" />
+        <argument
+            android:name="URL"
+            app:argType="string" />
+        <argument
+            android:name="author"
+            app:argType="string" />
+        <argument
+            android:name="content"
+            app:argType="string" />
+    </fragment>
+</navigation>

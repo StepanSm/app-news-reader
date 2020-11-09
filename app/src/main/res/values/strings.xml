@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">NEWS</string>
+    <string name="error_msg">Error getting data</string>
+    <string name="retry">Retry</string>
+    <string name="viewtype_creation_error">ViewType not declared</string>
+    <string name="collasping_image">Collasping Image</string>
+    <string name="news_logo">MyTimes Logo</string>
+    <string name="newsapi_tag">A simple News Reader powered by www.newsapi.org</string>
+
 </resources>

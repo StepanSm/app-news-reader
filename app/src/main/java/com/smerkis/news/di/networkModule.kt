@@ -3,6 +3,7 @@ package com.smerkis.news.di
 import com.google.gson.GsonBuilder
 import com.jakewharton.retrofit2.adapter.kotlin.coroutines.CoroutineCallAdapterFactory
 import com.smerkis.news.api.NewsApi
+import okhttp3.Cache
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
 import org.koin.dsl.module
@@ -22,6 +23,7 @@ val networkModule = module {
         httpLoggingInterceptor.level = HttpLoggingInterceptor.Level.BASIC
         OkHttpClient.Builder().apply {
             connectTimeout(CONNECT_TIMEOUT, TimeUnit.SECONDS)
+            readTimeout(60, TimeUnit.SECONDS)
             retryOnConnectionFailure(true)
             addInterceptor(httpLoggingInterceptor)
         }.build()

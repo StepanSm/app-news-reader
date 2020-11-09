@@ -1,8 +1,13 @@
 package com.smerkis.news.model
 
 data class Source(
-    var id: String?,
-    var name: String,
+    val id: String?,
+    val name: String,
+    val description: String,
+    val url: String,
+    val category: String,
+    val language: String,
+    val country: String
 )
 
 
