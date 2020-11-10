@@ -7,7 +7,7 @@
     <dimen name="text_size_button">20sp</dimen>
     <dimen name="text_size_big">20sp</dimen>
     <dimen name="line_spacing">1sp</dimen>
-    <string name="read_the_full_article">Read the full article</string>
     <dimen name="corner_radius_button">5dp</dimen>
+    <dimen name="card_layout_margin">8dp</dimen>
 
 </resources>

@@ -3,11 +3,16 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/navigation"
-    app:startDestination="@id/newsFeedFragment">
+    app:startDestination="@id/emptyFragment">
 
     <fragment
+        android:id="@+id/emptyFragment"
+        android:name="androidx.fragment.app.Fragment" />
 
-        android:id="@+id/newsFeedFragment"
+
+
+    <fragment
+        android:id="@+id/news_feed_fragment"
         android:name="com.smerkis.news.ui.NewsFeedFragment"
         android:label="NewsFeedFragment"
         tools:layout="@layout/fragment_news_feed">
@@ -43,4 +48,15 @@
             android:name="content"
             app:argType="string" />
     </fragment>
+    <fragment
+        android:id="@+id/aboutAppFragment"
+        android:name="com.smerkis.news.ui.AboutAppFragment"
+        android:label="AboutAppFragment" />
+
+    <fragment
+        android:id="@+id/sourcesFragment"
+        android:name="com.smerkis.news.ui.SourcesFragment"
+        android:label="fragment_sources"
+        tools:layout="@layout/fragment_sources" />
+
 </navigation>

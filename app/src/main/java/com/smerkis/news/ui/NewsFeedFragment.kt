@@ -2,65 +2,74 @@ package com.smerkis.news.ui
 
 import android.os.Bundle
 import android.view.View
-import android.widget.Toast
-import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.Fragment
-import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.navigation.fragment.findNavController
 import androidx.swiperefreshlayout.widget.SwipeRefreshLayout
 import by.kirich1409.viewbindingdelegate.viewBinding
 import com.smerkis.news.R
-import com.smerkis.news.databinding.CardRowBinding
+import com.smerkis.news.api.NetworkState
 import com.smerkis.news.databinding.FragmentNewsFeedBinding
 import com.smerkis.news.model.ArticleStructure
+import com.smerkis.news.ui.adapter.NewsFeedAdapter
 import com.smerkis.news.viewmodel.NewsFeedViewModel
-import com.utsman.recycling.paged.setupAdapterPaged
 import org.koin.androidx.viewmodel.ext.android.viewModel
 
 class NewsFeedFragment : Fragment(R.layout.fragment_news_feed),
-    SwipeRefreshLayout.OnRefreshListener {
+    SwipeRefreshLayout.OnRefreshListener, NewsFeedAdapter.OnClickListener {
 
+    private val adapter = NewsFeedAdapter(this)
     private val viewBinding: FragmentNewsFeedBinding by viewBinding(FragmentNewsFeedBinding::bind)
     private val model: NewsFeedViewModel by viewModel()
-
+    private var lastPosition = -1
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+        setupRecyclerView()
+        observeViewModelData()
+    }
+
+
+    private fun setupRecyclerView() {
+        viewBinding.recyclerView.adapter = adapter
         viewBinding.swipeRefreshLayout.setOnRefreshListener(this)
         viewBinding.swipeRefreshLayout.setColorSchemeResources(R.color.colorPrimary)
         viewBinding.swipeRefreshLayout.isRefreshing = true
+    }
 
-        viewBinding.recyclerView.setupAdapterPaged<ArticleStructure>(R.layout.card_row) { adapter, context, list ->
 
-            bind { itemView, _, item ->
-                val binding = DataBindingUtil.bind<CardRowBinding>(itemView)
-                binding?.article = item
-            }
-
-            val layoutManager = LinearLayoutManager(context)
-            setLayoutManager(layoutManager)
-
-            addLoader(R.layout.loader_layout) {
-                idLoader = R.id.progress_circular
-                idTextError = R.id.error_text_view
-            }
-
-            model.articles.observe(viewLifecycleOwner) {
-                submitList(it)
-                viewBinding.swipeRefreshLayout.isRefreshing = false
-            }
-
-            model.networkState.observe(viewLifecycleOwner) {
-                viewBinding.swipeRefreshLayout.isRefreshing = false
-                submitNetwork(it)
-            }
+    private fun observeViewModelData() {
+        model.networkState?.observe(viewLifecycleOwner) { adapter.updateNetworkState(it) }
+        model.articles.observe(viewLifecycleOwner) { articles ->
+            adapter.submitList(articles)
+            viewBinding.swipeRefreshLayout.isRefreshing = false
         }
     }
 
     override fun onRefresh() {
         viewBinding.swipeRefreshLayout.isRefreshing = true
-
-        model.refreshAllList()
     }
 
+    override fun onRetryClick() {
+        TODO("Not yet implemented")
+    }
 
+    override fun whenListIsUpdated(size: Int, networkState: NetworkState?) {
+        TODO("Not yet implemented")
+    }
+
+    override fun onArticleRowClicked(article: ArticleStructure) {
+        article.apply {
+            findNavController().navigate(
+                NewsFeedFragmentDirections.actionNewsFeedFragmentToArticleFragment(
+                    title,
+                    description,
+                    publishedAt,
+                    urlToImage,
+                    url,
+                    author ?: "",
+                    content ?: ""
+                )
+            )
+        }
+    }
 }
