@@ -8,6 +8,7 @@ import androidx.fragment.app.FragmentManager
 import androidx.fragment.app.FragmentTransaction
 import androidx.paging.PagedList
 
+
 fun Any.logi(msg: String) = Log.i(this.javaClass.simpleName, msg)
 fun Any.loge(msg: String) = Log.e(this.javaClass.simpleName, msg)
 
@@ -22,3 +23,4 @@ fun pagedListConfig() = PagedList.Config.Builder()
     .setEnablePlaceholders(false)
     .setPageSize(20)
     .build()
+

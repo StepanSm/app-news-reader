@@ -9,5 +9,7 @@
     <dimen name="line_spacing">1sp</dimen>
     <dimen name="corner_radius_button">5dp</dimen>
     <dimen name="card_layout_margin">8dp</dimen>
+    <dimen name="padding_16">16dp</dimen>
+    <dimen name="margin_16">16dp</dimen>
 
 </resources>

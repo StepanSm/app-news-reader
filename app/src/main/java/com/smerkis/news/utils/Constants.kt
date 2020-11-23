@@ -1,6 +1,7 @@
 package com.smerkis.news.utils
 
 import com.smerkis.news.BuildConfig
+import java.util.*
 
 class Constants {
 
@@ -15,27 +16,15 @@ class Constants {
         const val NO_MORE_DATA: Int = 100
 
 
-        val SOURCE_ARRAY = arrayOf(
-            "google-news-in",
-            "bbc-news",
-            "the-hindu",
-            "the-times-of-india",
-            "buzzfeed",
-            "mashable",
-            "mtv-news",
-            "bbc-sport",
-            "espn-cric-info",
-            "talksport",
-            "medical-news-today",
-            "national-geographic",
-            "crypto-coins-news",
-            "engadget",
-            "the-next-web",
-            "the-verge",
-            "techcrunch",
-            "techradar",
-            "ign",
-            "polygon"
+        val CATEGORIES = arrayListOf(
+            "General",
+            "Entertainment",
+            "Sports",
+            "Business",
+            "Technology",
+            "Science",
+            "Health"
         )
+
     }
 }

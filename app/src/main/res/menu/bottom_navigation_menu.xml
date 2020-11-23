@@ -6,11 +6,11 @@
         android:title="@string/menu_1" />
 
     <item
-        android:id="@+id/sourcesFragment"
+        android:id="@+id/sources_fragment"
         android:title="@string/menu_2" />
 
     <item
-        android:id="@+id/aboutAppFragment"
+        android:id="@+id/about_app_fragment"
         android:title="@string/menu_3" />
 
 </menu>

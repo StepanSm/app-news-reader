@@ -39,5 +39,5 @@ val networkModule = module {
     }
 
     //NewsApi
-    factory { get<Retrofit>().create(NewsApi::class.java) }
+    single { get<Retrofit>().create(NewsApi::class.java) }
 }

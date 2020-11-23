@@ -3,60 +3,9 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/navigation"
-    app:startDestination="@id/emptyFragment">
-
+    app:startDestination="@id/mainFragment">
     <fragment
-        android:id="@+id/emptyFragment"
-        android:name="androidx.fragment.app.Fragment" />
-
-
-
-    <fragment
-        android:id="@+id/news_feed_fragment"
-        android:name="com.smerkis.news.ui.NewsFeedFragment"
-        android:label="NewsFeedFragment"
-        tools:layout="@layout/fragment_news_feed">
-        <action
-            android:id="@+id/action_newsFeedFragment_to_articleFragment"
-            app:destination="@id/fragment_article"
-            app:enterAnim="@anim/pull_in_right" />
-    </fragment>
-    <fragment
-        android:id="@+id/fragment_article"
-        android:name="com.smerkis.news.ui.ArticleFragment"
-        android:label="Article"
-        tools:layout="@layout/fragment_article">
-        <argument
-            android:name="title"
-            app:argType="string" />
-        <argument
-            android:name="description"
-            app:argType="string" />
-        <argument
-            android:name="date"
-            app:argType="string" />
-        <argument
-            android:name="imgURL"
-            app:argType="string" />
-        <argument
-            android:name="URL"
-            app:argType="string" />
-        <argument
-            android:name="author"
-            app:argType="string" />
-        <argument
-            android:name="content"
-            app:argType="string" />
-    </fragment>
-    <fragment
-        android:id="@+id/aboutAppFragment"
-        android:name="com.smerkis.news.ui.AboutAppFragment"
-        android:label="AboutAppFragment" />
-
-    <fragment
-        android:id="@+id/sourcesFragment"
-        android:name="com.smerkis.news.ui.SourcesFragment"
-        android:label="fragment_sources"
-        tools:layout="@layout/fragment_sources" />
-
+        android:id="@+id/mainFragment"
+        android:name="com.smerkis.news.ui.MainFragment"
+        android:label="MainFragment" />
 </navigation>
