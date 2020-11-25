@@ -1,0 +1,35 @@
+com/smerkis/news/databinding/RvNewsFeedBinding.java
+ com.smerkis.news.databinding.RvNewsFeedBinding
+com/smerkis/news/databinding/ActivityMainBinding.java
+ com.smerkis.news.databinding.ActivityMainBinding
+com/smerkis/news/databinding/FragmentArticleBinding.java
+ com.smerkis.news.databinding.FragmentArticleBinding
+com/smerkis/news/data/storage/NewsArticleDao_Impl.java
+ com.smerkis.news.data.storage.NewsArticleDao_Impl
+ com.smerkis.news.data.storage.NewsArticleDao_Impl$1
+ com.smerkis.news.data.storage.NewsArticleDao_Impl$2
+ com.smerkis.news.data.storage.NewsArticleDao_Impl$3
+ com.smerkis.news.data.storage.NewsArticleDao_Impl$4
+com/smerkis/news/databinding/FragmentAboutAppBinding.java
+ com.smerkis.news.databinding.FragmentAboutAppBinding
+com/smerkis/news/databinding/FragmentWebViewBinding.java
+ com.smerkis.news.databinding.FragmentWebViewBinding
+com/smerkis/news/databinding/FragmentSearchBinding.java
+ com.smerkis.news.databinding.FragmentSearchBinding
+com/smerkis/news/BuildConfig.java
+ com.smerkis.news.BuildConfig
+com/smerkis/news/databinding/ContentBrowserFullBinding.java
+ com.smerkis.news.databinding.ContentBrowserFullBinding
+com/smerkis/news/data/storage/NewsDatabase_Impl.java
+ com.smerkis.news.data.storage.NewsDatabase_Impl
+ com.smerkis.news.data.storage.NewsDatabase_Impl$1
+com/smerkis/news/databinding/ItemRepoStateBinding.java
+ com.smerkis.news.databinding.ItemRepoStateBinding
+com/smerkis/news/databinding/ItemArticleBinding.java
+ com.smerkis.news.databinding.ItemArticleBinding
+com/smerkis/news/databinding/LibraryItemBinding.java
+ com.smerkis.news.databinding.LibraryItemBinding
+com/smerkis/news/databinding/FragmentMainBinding.java
+ com.smerkis.news.databinding.FragmentMainBinding
+com/smerkis/news/databinding/ToolbarBinding.java
+ com.smerkis.news.databinding.ToolbarBinding

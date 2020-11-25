@@ -7,5 +7,35 @@
     <fragment
         android:id="@+id/mainFragment"
         android:name="com.smerkis.news.ui.MainFragment"
-        android:label="MainFragment" />
+        android:label="MainFragment"
+        tools:layout="@layout/fragment_main">
+        <action
+            android:id="@+id/action_mainFragment_to_articleFragment"
+            app:destination="@id/articleFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_aboutAppFragment"
+            app:destination="@id/aboutAppFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_searchFragment"
+            app:destination="@id/searchFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/articleFragment"
+        android:name="com.smerkis.news.ui.ArticleFragment"
+        android:label="ArticleFragment"
+        tools:layout="@layout/fragment_article" >
+        <argument
+            android:name="article"
+            app:argType="com.smerkis.news.model.ArticleStructure" />
+    </fragment>
+    <fragment
+        tools:layout="@layout/fragment_about_app"
+        android:id="@+id/aboutAppFragment"
+        android:name="com.smerkis.news.ui.AboutAppFragment"
+        android:label="AboutAppFragment" />
+    <fragment
+        tools:layout="@layout/fragment_search"
+        android:id="@+id/searchFragment"
+        android:name="com.smerkis.news.ui.SearchFragment"
+        android:label="SearchFragment" />
 </navigation>

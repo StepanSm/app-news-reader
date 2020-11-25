@@ -3,83 +3,71 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/motionLayout"
-    android:background="@color/colorBackground"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    app:layoutDescription="@xml/fragment_article_scene">
 
-    <androidx.appcompat.widget.Toolbar
-        android:id="@+id/toolbar"
-        android:layout_width="match_parent"
-        android:background="@color/grey"
-        android:layout_height="?attr/actionBarSize"
-        android:visibility="invisible"
-        app:layout_constraintEnd_toEndOf="parent"
+    <androidx.appcompat.widget.ActionMenuView
+        android:id="@+id/back_bottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-
-    <androidx.cardview.widget.CardView
-        android:id="@+id/card_view"
+    <ImageView
+        android:id="@+id/toolbar_image"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="150dp"
+        android:layout_marginTop="@dimen/margin_16"
+        android:contentDescription="@null"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:padding="@dimen/padding_16">
-
-            <ImageView
-                android:id="@+id/toolbar_image"
-                android:layout_width="match_parent"
-                android:layout_height="150dp"
-                android:contentDescription="@null"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:srcCompat="@drawable/news_logo" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_bbcnews" />
 
 
-            <TextView
-                android:id="@+id/author"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_margin="@dimen/margin_16"
-                android:gravity="center"
-                android:maxLines="1"
-                android:textAllCaps="true"
-                android:textColor="#f48930"
-                android:textSize="24sp"
-                android:textStyle="bold"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_chainStyle="packed"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/toolbar_image"
-                tools:text="BBS NEWS" />
+    <TextView
+        android:id="@+id/author"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_16"
+        android:gravity="center"
+        android:maxLines="1"
+        android:textAllCaps="true"
+        android:textColor="#f48930"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbar_image"
+        tools:text="BBS NEWS" />
 
-            <TextView
-                android:id="@+id/title"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="50dp"
-                android:layout_marginEnd="50dp"
-                android:gravity="center"
-                android:lineSpacingExtra="2.2dp"
-                android:paddingBottom="10dp"
-                android:textColor="#000000"
-                android:textSize="17sp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/author"
-                tools:text="Kotlin is expressive, concise, and powerful. Best of all, it's interoperable with the Java" />
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:gravity="center"
+        android:lineSpacingExtra="2.2dp"
+        android:paddingBottom="10dp"
+        android:textColor="#000000"
+        android:textSize="17sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/author"
+        tools:text="Kotlin is expressive, concise, and powerful. Best of all, it's interoperable with the Java" />
 
-        </androidx.constraintlayout.widget.ConstraintLayout>
-
-
-    </androidx.cardview.widget.CardView>
-
+    <View
+        android:id="@+id/sep"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/grey"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/fab"
@@ -89,9 +77,9 @@
         android:elevation="4dp"
         android:lineSpacingExtra="2.2dp"
         android:src="@drawable/ic_share_24"
-        app:layout_constraintBottom_toBottomOf="@+id/card_view"
+        app:layout_constraintBottom_toBottomOf="@+id/sep"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/card_view" />
+        app:layout_constraintTop_toBottomOf="@+id/sep" />
 
     <TextView
         android:id="@+id/date"
@@ -101,7 +89,7 @@
         android:textColor="@color/black"
         android:textStyle="italic"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/card_view"
+        app:layout_constraintTop_toBottomOf="@+id/sep"
         tools:text="14 september, 2020" />
 
 
@@ -115,7 +103,7 @@
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/date"
+        app:layout_constraintTop_toBottomOf="@+id/fab"
         tools:text="Повседневная пракреализации модели развития. Разнообразный и богатый опыт реализация намеченных плановых заданий способствует подготовки и реализ" />
 
 

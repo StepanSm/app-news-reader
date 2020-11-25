@@ -1,12 +1,14 @@
 package com.smerkis.news.model
 
+import android.os.Parcelable
 import androidx.room.Entity
 import androidx.room.Ignore
 import androidx.room.PrimaryKey
+import kotlinx.android.parcel.Parcelize
 
 
 const val tableName = "news_article"
-
+@Parcelize
 @Entity(tableName = tableName)
 data class ArticleStructure(
     @Ignore
@@ -20,7 +22,7 @@ data class ArticleStructure(
     var publishedAt: String?,
     var content: String?,
     var category: String? = source.category
-) {
+): Parcelable {
     constructor() : this(Source("", "", "", "", "", "", ""), "", "", "", "", "", "", "")
 }
 
@@ -30,7 +32,7 @@ data class NewsResponse(
     val articles: List<ArticleStructure>
 )
 
-
+@Parcelize
 data class Source(
     val id: String?,
     val name: String,
@@ -39,7 +41,7 @@ data class Source(
     val category: String,
     val language: String,
     val country: String
-)
+): Parcelable
 
 data class SourcesResponse(
     val status: String,

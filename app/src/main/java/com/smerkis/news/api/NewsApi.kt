@@ -1,8 +1,7 @@
 package com.smerkis.news.api
 
 import com.smerkis.news.model.NewsResponse
-import com.smerkis.news.model.SourcesResponse
-import retrofit2.Response
+import retrofit2.Call
 import retrofit2.http.GET
 import retrofit2.http.Query
 
@@ -14,5 +13,13 @@ interface NewsApi {
         @Query("country") country: String,
         @Query("apiKey") apiKey: String
     ): NewsResponse
+
+    @GET("everything")
+    fun getSearchResults(
+        @Query("q") query: String?,
+        @Query("sortBy") sortBy: String?,
+        @Query("language") language: String?,
+        @Query("apiKey") apiKey: String?
+    ): NewsResponse?
 }
 

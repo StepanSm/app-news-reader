@@ -12,11 +12,17 @@ class MyApp : Application() {
 
     override fun onCreate() {
         super.onCreate()
+        instance = this
 
         startKoin {
             printLogger() // Koin Logger
             androidContext(this@MyApp)
             modules(listOf(roomModule, networkModule, viewModelModule, repositoryModule))
         }
+    }
+
+    companion object {
+        lateinit var instance: MyApp
+            private set
     }
 }

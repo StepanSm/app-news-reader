@@ -1,12 +1,13 @@
 package com.smerkis.news.utils
 
 import android.content.Context
+import android.net.ConnectivityManager
 import android.util.Log
 import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
 import androidx.fragment.app.FragmentTransaction
-import androidx.paging.PagedList
+import com.smerkis.news.MyApp
 
 
 fun Any.logi(msg: String) = Log.i(this.javaClass.simpleName, msg)
@@ -18,9 +19,10 @@ fun Fragment.toast(msg: String) = Toast.makeText(this.activity, msg, Toast.LENGT
 inline fun FragmentManager.inTransaction(func: FragmentTransaction.() -> FragmentTransaction) =
     beginTransaction().func().commit()
 
-fun pagedListConfig() = PagedList.Config.Builder()
-    .setInitialLoadSizeHint(5)
-    .setEnablePlaceholders(false)
-    .setPageSize(20)
-    .build()
 
+fun isNetworkAvailable(): Boolean {
+    val connectivityManager =
+        MyApp.instance.getSystemService(Context.CONNECTIVITY_SERVICE) as ConnectivityManager
+
+    return connectivityManager.activeNetworkInfo != null && connectivityManager.activeNetworkInfo!!.isConnectedOrConnecting
+}

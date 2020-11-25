@@ -1,0 +1,246 @@
+[
+    {
+        "merged": "/home/stepan/AndroidStudioProjects/NEWS/app/build/intermediates/res/merged/debug/drawable_ic_close.xml.flat",
+        "source": "/home/stepan/AndroidStudioProjects/NEWS/app/src/main/res/drawable/ic_close.xml"
+    },
+    {
+        "merged": "/home/stepan/AndroidStudioProjects/NEWS/app/build/intermediates/res/merged/debug/layout_content_browser_full.xml.flat",
+        "source": "/home/stepan/AndroidStudioProjects/NEWS/app/src/main/res/layout/content_browser_full.xml"
+    },
+    {
+        "merged": "/home/stepan/AndroidStudioProjects/NEWS/app/build/intermediates/res/merged/debug/drawable_news_logo.png.flat",
+        "source": "/home/stepan/AndroidStudioProjects/NEWS/app/src/main/res/drawable/news_logo.png"
+    },
+    {
+        "merged": "/home/stepan/AndroidStudioProjects/NEWS/app/build/intermediates/res/merged/debug/anim_layout_animation_fall_down.xml.flat",
+        "source": "/home/stepan/AndroidStudioProjects/NEWS/app/src/main/res/anim/layout_animation_fall_down.xml"
+    },
+    {
+        "merged": "/home/stepan/AndroidStudioProjects/NEWS/app/build/intermediates/res/merged/debug/drawable_launch_screen.xml.flat",
+        "source": "/home/stepan/AndroidStudioProjects/NEWS/app/src/main/res/drawable/launch_screen.xml"
+    },
+    {
+        "merged": "/home/stepan/AndroidStudioProjects/NEWS/app/build/intermediates/res/merged/debug/drawable_ic_share_24.xml.flat",
+        "source": "/home/stepan/AndroidStudioProjects/NEWS/app/src/main/res/drawable/ic_share_24.xml"
+    },
+    {
+        "merged": "/home/stepan/AndroidStudioProjects/NEWS/app/build/intermediates/res/merged/debug/xml_fragment_article_scene.xml.flat",
+        "source": "/home/stepan/AndroidStudioProjects/NEWS/app/src/main/res/xml/fragment_article_scene.xml"
+    },
+    {
+        "merged": "/home/stepan/AndroidStudioProjects/NEWS/app/build/intermediates/res/merged/debug/mipmap-xxxhdpi_ic_launcher_round.png.flat",
+        "source": "/home/stepan/AndroidStudioProjects/NEWS/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "/home/stepan/AndroidStudioProjects/NEWS/app/build/intermediates/res/merged/debug/mipmap-hdpi_ic_launcher_round.png.flat",
+        "source": "/home/stepan/AndroidStudioProjects/NEWS/app/src/main/res/mipmap-hdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "/home/stepan/AndroidStudioProjects/NEWS/app/build/intermediates/res/merged/debug/navigation_navigation.xml.flat",
+        "source": "/home/stepan/AndroidStudioProjects/NEWS/app/src/main/res/navigation/navigation.xml"
+    },
+    {
+        "merged": "/home/stepan/AndroidStudioProjects/NEWS/app/build/intermediates/res/merged/debug/drawable-xxhdpi_ic_bbcnews.webp.flat",
+        "source": "/home/stepan/AndroidStudioProjects/NEWS/app/src/main/res/drawable-xxhdpi/ic_bbcnews.webp"
+    },
+    {
+        "merged": "/home/stepan/AndroidStudioProjects/NEWS/app/build/intermediates/res/merged/debug/layout_rv_news_feed.xml.flat",
+        "source": "/home/stepan/AndroidStudioProjects/NEWS/app/src/main/res/layout/rv_news_feed.xml"
+    },
+    {
+        "merged": "/home/stepan/AndroidStudioProjects/NEWS/app/build/intermediates/res/merged/debug/mipmap-mdpi_ic_launcher.png.flat",
+        "source": "/home/stepan/AndroidStudioProjects/NEWS/app/src/main/res/mipmap-mdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/home/stepan/AndroidStudioProjects/NEWS/app/build/intermediates/res/merged/debug/layout_library_item.xml.flat",
+        "source": "/home/stepan/AndroidStudioProjects/NEWS/app/src/main/res/layout/library_item.xml"
+    },
+    {
+        "merged": "/home/stepan/AndroidStudioProjects/NEWS/app/build/intermediates/res/merged/debug/xml_fragment_main_scene.xml.flat",
+        "source": "/home/stepan/AndroidStudioProjects/NEWS/app/src/main/res/xml/fragment_main_scene.xml"
+    },
+    {
+        "merged": "/home/stepan/AndroidStudioProjects/NEWS/app/build/intermediates/res/merged/debug/menu_back_stack.xml.flat",
+        "source": "/home/stepan/AndroidStudioProjects/NEWS/app/src/main/res/menu/back_stack.xml"
+    },
+    {
+        "merged": "/home/stepan/AndroidStudioProjects/NEWS/app/build/intermediates/res/merged/debug/mipmap-mdpi_ic_launcher_round.png.flat",
+        "source": "/home/stepan/AndroidStudioProjects/NEWS/app/src/main/res/mipmap-mdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "/home/stepan/AndroidStudioProjects/NEWS/app/build/intermediates/res/merged/debug/anim_push_out_right.xml.flat",
+        "source": "/home/stepan/AndroidStudioProjects/NEWS/app/src/main/res/anim/push_out_right.xml"
+    },
+    {
+        "merged": "/home/stepan/AndroidStudioProjects/NEWS/app/build/intermediates/res/merged/debug/drawable_ic_backspace_24.xml.flat",
+        "source": "/home/stepan/AndroidStudioProjects/NEWS/app/src/main/res/drawable/ic_backspace_24.xml"
+    },
+    {
+        "merged": "/home/stepan/AndroidStudioProjects/NEWS/app/build/intermediates/res/merged/debug/drawable_ic_image.xml.flat",
+        "source": "/home/stepan/AndroidStudioProjects/NEWS/app/src/main/res/drawable/ic_image.xml"
+    },
+    {
+        "merged": "/home/stepan/AndroidStudioProjects/NEWS/app/build/intermediates/res/merged/debug/anim_push_out_left.xml.flat",
+        "source": "/home/stepan/AndroidStudioProjects/NEWS/app/src/main/res/anim/push_out_left.xml"
+    },
+    {
+        "merged": "/home/stepan/AndroidStudioProjects/NEWS/app/build/intermediates/res/merged/debug/drawable_ic_message_24.xml.flat",
+        "source": "/home/stepan/AndroidStudioProjects/NEWS/app/src/main/res/drawable/ic_message_24.xml"
+    },
+    {
+        "merged": "/home/stepan/AndroidStudioProjects/NEWS/app/build/intermediates/res/merged/debug/anim_pull_in_left.xml.flat",
+        "source": "/home/stepan/AndroidStudioProjects/NEWS/app/src/main/res/anim/pull_in_left.xml"
+    },
+    {
+        "merged": "/home/stepan/AndroidStudioProjects/NEWS/app/build/intermediates/res/merged/debug/layout_fragment_article.xml.flat",
+        "source": "/home/stepan/AndroidStudioProjects/NEWS/app/src/main/res/layout/fragment_article.xml"
+    },
+    {
+        "merged": "/home/stepan/AndroidStudioProjects/NEWS/app/build/intermediates/res/merged/debug/drawable_news_logo_144dp.xml.flat",
+        "source": "/home/stepan/AndroidStudioProjects/NEWS/app/src/main/res/drawable/news_logo_144dp.xml"
+    },
+    {
+        "merged": "/home/stepan/AndroidStudioProjects/NEWS/app/build/intermediates/res/merged/debug/drawable-mdpi_ic_bbcnews.webp.flat",
+        "source": "/home/stepan/AndroidStudioProjects/NEWS/app/src/main/res/drawable-mdpi/ic_bbcnews.webp"
+    },
+    {
+        "merged": "/home/stepan/AndroidStudioProjects/NEWS/app/build/intermediates/res/merged/debug/drawable-v24_ic_add_a_photo_24dp.xml.flat",
+        "source": "/home/stepan/AndroidStudioProjects/NEWS/app/src/main/res/drawable-v24/ic_add_a_photo_24dp.xml"
+    },
+    {
+        "merged": "/home/stepan/AndroidStudioProjects/NEWS/app/build/intermediates/res/merged/debug/anim_pull_in_right.xml.flat",
+        "source": "/home/stepan/AndroidStudioProjects/NEWS/app/src/main/res/anim/pull_in_right.xml"
+    },
+    {
+        "merged": "/home/stepan/AndroidStudioProjects/NEWS/app/build/intermediates/res/merged/debug/layout_fragment_main.xml.flat",
+        "source": "/home/stepan/AndroidStudioProjects/NEWS/app/src/main/res/layout/fragment_main.xml"
+    },
+    {
+        "merged": "/home/stepan/AndroidStudioProjects/NEWS/app/build/intermediates/res/merged/debug/drawable_ic_search.xml.flat",
+        "source": "/home/stepan/AndroidStudioProjects/NEWS/app/src/main/res/drawable/ic_search.xml"
+    },
+    {
+        "merged": "/home/stepan/AndroidStudioProjects/NEWS/app/build/intermediates/res/merged/debug/layout_fragment_search.xml.flat",
+        "source": "/home/stepan/AndroidStudioProjects/NEWS/app/src/main/res/layout/fragment_search.xml"
+    },
+    {
+        "merged": "/home/stepan/AndroidStudioProjects/NEWS/app/build/intermediates/res/merged/debug/mipmap-xxhdpi_ic_launcher.png.flat",
+        "source": "/home/stepan/AndroidStudioProjects/NEWS/app/src/main/res/mipmap-xxhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/home/stepan/AndroidStudioProjects/NEWS/app/build/intermediates/res/merged/debug/layout_item_repo_state.xml.flat",
+        "source": "/home/stepan/AndroidStudioProjects/NEWS/app/src/main/res/layout/item_repo_state.xml"
+    },
+    {
+        "merged": "/home/stepan/AndroidStudioProjects/NEWS/app/build/intermediates/res/merged/debug/drawable-v24_background_button.xml.flat",
+        "source": "/home/stepan/AndroidStudioProjects/NEWS/app/src/main/res/drawable-v24/background_button.xml"
+    },
+    {
+        "merged": "/home/stepan/AndroidStudioProjects/NEWS/app/build/intermediates/res/merged/debug/anim_item_animation_fall_down.xml.flat",
+        "source": "/home/stepan/AndroidStudioProjects/NEWS/app/src/main/res/anim/item_animation_fall_down.xml"
+    },
+    {
+        "merged": "/home/stepan/AndroidStudioProjects/NEWS/app/build/intermediates/res/merged/debug/drawable_ic_news_24.xml.flat",
+        "source": "/home/stepan/AndroidStudioProjects/NEWS/app/src/main/res/drawable/ic_news_24.xml"
+    },
+    {
+        "merged": "/home/stepan/AndroidStudioProjects/NEWS/app/build/intermediates/res/merged/debug/layout_fragment_web_view.xml.flat",
+        "source": "/home/stepan/AndroidStudioProjects/NEWS/app/src/main/res/layout/fragment_web_view.xml"
+    },
+    {
+        "merged": "/home/stepan/AndroidStudioProjects/NEWS/app/build/intermediates/res/merged/debug/mipmap-hdpi_ic_launcher.png.flat",
+        "source": "/home/stepan/AndroidStudioProjects/NEWS/app/src/main/res/mipmap-hdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/home/stepan/AndroidStudioProjects/NEWS/app/build/intermediates/res/merged/debug/drawable_ic_launcher_background.xml.flat",
+        "source": "/home/stepan/AndroidStudioProjects/NEWS/app/src/main/res/drawable/ic_launcher_background.xml"
+    },
+    {
+        "merged": "/home/stepan/AndroidStudioProjects/NEWS/app/build/intermediates/res/merged/debug/drawable-xhdpi_ic_bbcnews.webp.flat",
+        "source": "/home/stepan/AndroidStudioProjects/NEWS/app/src/main/res/drawable-xhdpi/ic_bbcnews.webp"
+    },
+    {
+        "merged": "/home/stepan/AndroidStudioProjects/NEWS/app/build/intermediates/res/merged/debug/anim_up_from_bottom.xml.flat",
+        "source": "/home/stepan/AndroidStudioProjects/NEWS/app/src/main/res/anim/up_from_bottom.xml"
+    },
+    {
+        "merged": "/home/stepan/AndroidStudioProjects/NEWS/app/build/intermediates/res/merged/debug/mipmap-xhdpi_ic_launcher_round.png.flat",
+        "source": "/home/stepan/AndroidStudioProjects/NEWS/app/src/main/res/mipmap-xhdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "/home/stepan/AndroidStudioProjects/NEWS/app/build/intermediates/res/merged/debug/menu_menu_search.xml.flat",
+        "source": "/home/stepan/AndroidStudioProjects/NEWS/app/src/main/res/menu/menu_search.xml"
+    },
+    {
+        "merged": "/home/stepan/AndroidStudioProjects/NEWS/app/build/intermediates/res/merged/debug/drawable_ic_back_btn.xml.flat",
+        "source": "/home/stepan/AndroidStudioProjects/NEWS/app/src/main/res/drawable/ic_back_btn.xml"
+    },
+    {
+        "merged": "/home/stepan/AndroidStudioProjects/NEWS/app/build/intermediates/res/merged/debug/mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "/home/stepan/AndroidStudioProjects/NEWS/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml"
+    },
+    {
+        "merged": "/home/stepan/AndroidStudioProjects/NEWS/app/build/intermediates/res/merged/debug/drawable-xxxhdpi_ic_bbcnews.webp.flat",
+        "source": "/home/stepan/AndroidStudioProjects/NEWS/app/src/main/res/drawable-xxxhdpi/ic_bbcnews.webp"
+    },
+    {
+        "merged": "/home/stepan/AndroidStudioProjects/NEWS/app/build/intermediates/res/merged/debug/mipmap-xxxhdpi_ic_launcher.png.flat",
+        "source": "/home/stepan/AndroidStudioProjects/NEWS/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/home/stepan/AndroidStudioProjects/NEWS/app/build/intermediates/res/merged/debug/layout_toolbar.xml.flat",
+        "source": "/home/stepan/AndroidStudioProjects/NEWS/app/src/main/res/layout/toolbar.xml"
+    },
+    {
+        "merged": "/home/stepan/AndroidStudioProjects/NEWS/app/build/intermediates/res/merged/debug/drawable_ic_baseline_adb_24.xml.flat",
+        "source": "/home/stepan/AndroidStudioProjects/NEWS/app/src/main/res/drawable/ic_baseline_adb_24.xml"
+    },
+    {
+        "merged": "/home/stepan/AndroidStudioProjects/NEWS/app/build/intermediates/res/merged/debug/mipmap-xhdpi_ic_launcher.png.flat",
+        "source": "/home/stepan/AndroidStudioProjects/NEWS/app/src/main/res/mipmap-xhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/home/stepan/AndroidStudioProjects/NEWS/app/build/intermediates/res/merged/debug/drawable_ic_apps_24.xml.flat",
+        "source": "/home/stepan/AndroidStudioProjects/NEWS/app/src/main/res/drawable/ic_apps_24.xml"
+    },
+    {
+        "merged": "/home/stepan/AndroidStudioProjects/NEWS/app/build/intermediates/res/merged/debug/color_button_text_color.xml.flat",
+        "source": "/home/stepan/AndroidStudioProjects/NEWS/app/src/main/res/color/button_text_color.xml"
+    },
+    {
+        "merged": "/home/stepan/AndroidStudioProjects/NEWS/app/build/intermediates/res/merged/debug/drawable-hdpi_ic_bbcnews.webp.flat",
+        "source": "/home/stepan/AndroidStudioProjects/NEWS/app/src/main/res/drawable-hdpi/ic_bbcnews.webp"
+    },
+    {
+        "merged": "/home/stepan/AndroidStudioProjects/NEWS/app/build/intermediates/res/merged/debug/layout_fragment_about_app.xml.flat",
+        "source": "/home/stepan/AndroidStudioProjects/NEWS/app/src/main/res/layout/fragment_about_app.xml"
+    },
+    {
+        "merged": "/home/stepan/AndroidStudioProjects/NEWS/app/build/intermediates/res/merged/debug/layout_item_article.xml.flat",
+        "source": "/home/stepan/AndroidStudioProjects/NEWS/app/src/main/res/layout/item_article.xml"
+    },
+    {
+        "merged": "/home/stepan/AndroidStudioProjects/NEWS/app/build/intermediates/res/merged/debug/layout_activity_main.xml.flat",
+        "source": "/home/stepan/AndroidStudioProjects/NEWS/app/src/main/res/layout/activity_main.xml"
+    },
+    {
+        "merged": "/home/stepan/AndroidStudioProjects/NEWS/app/build/intermediates/res/merged/debug/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "/home/stepan/AndroidStudioProjects/NEWS/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml"
+    },
+    {
+        "merged": "/home/stepan/AndroidStudioProjects/NEWS/app/build/intermediates/res/merged/debug/drawable_shadow.png.flat",
+        "source": "/home/stepan/AndroidStudioProjects/NEWS/app/src/main/res/drawable/shadow.png"
+    },
+    {
+        "merged": "/home/stepan/AndroidStudioProjects/NEWS/app/build/intermediates/res/merged/debug/menu_main_main.xml.flat",
+        "source": "/home/stepan/AndroidStudioProjects/NEWS/app/src/main/res/menu/main_main.xml"
+    },
+    {
+        "merged": "/home/stepan/AndroidStudioProjects/NEWS/app/build/intermediates/res/merged/debug/mipmap-xxhdpi_ic_launcher_round.png.flat",
+        "source": "/home/stepan/AndroidStudioProjects/NEWS/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "/home/stepan/AndroidStudioProjects/NEWS/app/build/intermediates/res/merged/debug/drawable-anydpi-v24_ic_launcher_foreground.xml.flat",
+        "source": "/home/stepan/AndroidStudioProjects/NEWS/app/build/generated/res/pngs/debug/drawable-anydpi-v24/ic_launcher_foreground.xml"
+    }
+]

@@ -4,9 +4,11 @@ import androidx.lifecycle.*
 import com.smerkis.news.model.ArticleStructure
 import com.smerkis.news.repo.NewsRepo
 import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.async
 import kotlinx.coroutines.flow.catch
 import kotlinx.coroutines.flow.collect
 import kotlinx.coroutines.launch
+import okhttp3.internal.wait
 
 
 class NewsViewModel(private val repo: NewsRepo) : ViewModel() {
