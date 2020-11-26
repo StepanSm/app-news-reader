@@ -3,27 +3,25 @@ package com.smerkis.news.ui.adapter
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import android.view.animation.AnimationUtils
+import android.view.animation.Transformation
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.RecyclerView
 import coil.load
+import coil.size.Scale
+import coil.transform.CircleCropTransformation
+import com.smerkis.news.MyApp
 import com.smerkis.news.R
 import com.smerkis.news.databinding.ItemArticleBinding
-import com.smerkis.news.model.ArticleStructure
+import com.smerkis.news.model.Article
 import com.smerkis.news.ui.MainFragment
+import com.smerkis.news.ui.adapter.ItemClickSupport.Companion.addTo
+import kotlinx.coroutines.Dispatchers
 
-class RvAdapter(
-    private var newsList: List<ArticleStructure>,
-    private val clickListener: ClickListener
-) :
+class RvAdapter(private var newsList: List<Article>) :
     RecyclerView.Adapter<RvAdapter.Holder>() {
-
 
     override fun getItemCount() = newsList.size
     private var lastPosition = -1
-
-    interface ClickListener {
-        fun onClick(article: ArticleStructure)
-    }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): Holder {
         return Holder(
@@ -35,28 +33,33 @@ class RvAdapter(
         )
     }
 
+    override fun onViewDetachedFromWindow(holder: Holder) {
+        super.onViewDetachedFromWindow(holder)
+        holder.itemView.clearAnimation()
+    }
+
     override fun onBindViewHolder(holder: Holder, position: Int) {
         holder.binding.apply {
-            tvCardMainTitle.text = newsList[position].title
-            imgCardMain.load(newsList[position].urlToImage)
-            cardRow.setOnClickListener {
-                clickListener.onClick(newsList[position])
+            tv.text = newsList[position].title
+            img.load(newsList[position].urlToImage) {
+                placeholder(R.drawable.ic_placeholder)
+                error(R.drawable.ic_placeholder)
+                scale(Scale.FILL)
+                dispatcher(Dispatchers.IO)
             }
-            if (position > lastPosition) {
-                val animation = AnimationUtils.loadAnimation(
-                    (clickListener as MainFragment).context,
-                    R.anim.item_animation_fall_down
-                )
-                cardRow.startAnimation(animation)
-                lastPosition = position
-            }
+            val animation = AnimationUtils.loadAnimation(
+                MyApp.instance,
+                if (position > lastPosition) R.anim.up_from_bottom else R.anim.down_from_top
+            )
+            container.startAnimation(animation)
+            lastPosition = position
         }
     }
 
-    inner class Holder(val binding: ItemArticleBinding) :
+    class Holder(val binding: ItemArticleBinding) :
         RecyclerView.ViewHolder(binding.root)
 
-    fun updateList(news: List<ArticleStructure>) {
+    fun updateList(news: List<Article>) {
         val diffResult = DiffUtil.calculateDiff(BooksDiffCallback(newsList, news), false)
         newsList = news
         diffResult.dispatchUpdatesTo(this)
@@ -64,8 +67,8 @@ class RvAdapter(
 }
 
 class BooksDiffCallback(
-    private val oldBooksList: List<ArticleStructure>?,
-    private val newBooksList: List<ArticleStructure>?
+    private val oldBooksList: List<Article>?,
+    private val newBooksList: List<Article>?
 ) : DiffUtil.Callback() {
 
     override fun areItemsTheSame(oldItemPosition: Int, newItemPosition: Int): Boolean {

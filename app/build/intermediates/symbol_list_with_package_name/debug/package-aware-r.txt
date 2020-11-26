@@ -27,6 +27,7 @@ anim design_bottom_sheet_slide_in
 anim design_bottom_sheet_slide_out
 anim design_snackbar_in
 anim design_snackbar_out
+anim down_from_top
 anim fragment_fast_out_extra_slow_in
 anim item_animation_fall_down
 anim layout_animation_fall_down
@@ -1610,12 +1611,7 @@ drawable design_ic_visibility
 drawable design_ic_visibility_off
 drawable design_password_eye
 drawable design_snackbar_background
-drawable ic_add_a_photo_24dp
-drawable ic_apps_24
 drawable ic_back_btn
-drawable ic_backspace_24
-drawable ic_baseline_adb_24
-drawable ic_bbcnews
 drawable ic_close
 drawable ic_image
 drawable ic_launcher_background
@@ -1625,10 +1621,9 @@ drawable ic_mtrl_checked_circle
 drawable ic_mtrl_chip_checked_black
 drawable ic_mtrl_chip_checked_circle
 drawable ic_mtrl_chip_close_circle
-drawable ic_news_24
+drawable ic_placeholder
 drawable ic_search
 drawable ic_share_24
-drawable launch_screen
 drawable material_ic_calendar_black_24dp
 drawable material_ic_clear_black_24dp
 drawable material_ic_edit_black_24dp
@@ -1647,7 +1642,6 @@ drawable mtrl_popupmenu_background_dark
 drawable mtrl_tabs_default_indicator
 drawable navigation_empty_icon
 drawable news_logo
-drawable news_logo_144dp
 drawable notification_action_background
 drawable notification_bg
 drawable notification_bg_low
@@ -1660,7 +1654,6 @@ drawable notification_template_icon_bg
 drawable notification_template_icon_low_bg
 drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
-drawable shadow
 drawable test_custom_background
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
@@ -1715,6 +1708,7 @@ id accessibility_custom_action_7
 id accessibility_custom_action_8
 id accessibility_custom_action_9
 id action0
+id action_articleFragment_to_webViewFragment
 id action_bar
 id action_bar_activity_content
 id action_bar_container
@@ -1737,6 +1731,7 @@ id action_mode_bar
 id action_mode_bar_stub
 id action_mode_close_button
 id action_search
+id action_searchFragment_to_articleFragment
 id action_text
 id actions
 id activity_chooser_view_content
@@ -1750,10 +1745,8 @@ id animateToStart
 id app_bar
 id app_name
 id articleFragment
-id article_button
 id asConfigured
 id async
-id author
 id auto
 id autoComplete
 id autoCompleteToEnd
@@ -1770,7 +1763,6 @@ id buttonPanel
 id cache_measures
 id cancel_action
 id cancel_button
-id card_row
 id center
 id center_horizontal
 id center_vertical
@@ -1852,12 +1844,14 @@ id forever
 id fragment_container_view_tag
 id ghost_view
 id ghost_view_holder
+id go_web_view
 id gone
 id graph
 id graph_wrap
 id group_divider
 id grouping
 id groups
+id h_guideline
 id hideable
 id home
 id homeAsUp
@@ -1868,12 +1862,12 @@ id ifRoom
 id ignore
 id ignoreRequest
 id image
-id img_card_main
-id include
+id img
 id info
 id inspection_slot_table_set
 id invisible
 id italic
+id item_click_support
 id item_touch_helper_previous_elevation
 id jumpToEnd
 id jumpToStart
@@ -1881,7 +1875,6 @@ id labeled
 id largeLabel
 id layout
 id left
-id library_name
 id line1
 id line3
 id linear
@@ -1935,7 +1928,6 @@ id normal
 id notification_background
 id notification_main_column
 id notification_main_column_container
-id nsv
 id off
 id on
 id outline
@@ -1954,7 +1946,6 @@ id percent
 id pin
 id position
 id postLayout
-id progressBar
 id progress_circular
 id progress_horizontal
 id radio
@@ -2008,6 +1999,7 @@ id snackbar_action
 id snackbar_text
 id snap
 id snapMargins
+id source
 id spacer
 id special_effects_controller_view_tag
 id spline
@@ -2076,8 +2068,7 @@ id transition_position
 id transition_scene_layoutid_cache
 id transition_transform
 id triangle
-id tv_author
-id tv_card_main_title
+id tv
 id tv_no_results
 id unchecked
 id uniform
@@ -2090,7 +2081,9 @@ id view_tree_saved_state_registry_owner
 id view_tree_view_model_store_owner
 id visible
 id visible_removing_fragment_view_tag
-id webView_article
+id vp
+id webViewFragment
+id web_view
 id withText
 id withinBounds
 id wrap
@@ -2158,7 +2151,6 @@ layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_main
-layout content_browser_full
 layout custom_dialog
 layout design_bottom_navigation_item
 layout design_bottom_sheet_dialog
@@ -2245,7 +2237,6 @@ layout text_view_with_line_height_from_layout
 layout text_view_with_line_height_from_style
 layout text_view_with_theme_line_height
 layout text_view_without_line_height
-layout toolbar
 menu back_stack
 menu main_main
 menu menu_search
@@ -2295,6 +2286,7 @@ string chip_text
 string clear_text_end_icon_content_description
 string collasping_image
 string debajyoti_basak
+string dialog_missing_message
 string error_icon_content_description
 string error_msg
 string et_search_fragment__hint
@@ -2302,7 +2294,6 @@ string exposed_dropdown_menu_content_description
 string fab_transformation_scrim_behavior
 string fab_transformation_sheet_behavior
 string glide
-string hello_blank_fragment
 string hide_bottom_view_on_scroll_behavior
 string icon_content_description
 string item_view_role_description

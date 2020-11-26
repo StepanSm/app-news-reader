@@ -3,7 +3,7 @@ package com.smerkis.news.ui
 import android.os.Bundle
 import android.os.Parcelable
 import androidx.navigation.NavArgs
-import com.smerkis.news.model.ArticleStructure
+import com.smerkis.news.model.Article
 import java.io.Serializable
 import java.lang.IllegalArgumentException
 import java.lang.UnsupportedOperationException
@@ -11,17 +11,17 @@ import kotlin.Suppress
 import kotlin.jvm.JvmStatic
 
 data class ArticleFragmentArgs(
-  val article: ArticleStructure
+  val article: Article
 ) : NavArgs {
   @Suppress("CAST_NEVER_SUCCEEDS")
   fun toBundle(): Bundle {
     val result = Bundle()
-    if (Parcelable::class.java.isAssignableFrom(ArticleStructure::class.java)) {
+    if (Parcelable::class.java.isAssignableFrom(Article::class.java)) {
       result.putParcelable("article", this.article as Parcelable)
-    } else if (Serializable::class.java.isAssignableFrom(ArticleStructure::class.java)) {
+    } else if (Serializable::class.java.isAssignableFrom(Article::class.java)) {
       result.putSerializable("article", this.article as Serializable)
     } else {
-      throw UnsupportedOperationException(ArticleStructure::class.java.name +
+      throw UnsupportedOperationException(Article::class.java.name +
           " must implement Parcelable or Serializable or must be an Enum.")
     }
     return result
@@ -31,13 +31,13 @@ data class ArticleFragmentArgs(
     @JvmStatic
     fun fromBundle(bundle: Bundle): ArticleFragmentArgs {
       bundle.setClassLoader(ArticleFragmentArgs::class.java.classLoader)
-      val __article : ArticleStructure?
+      val __article : Article?
       if (bundle.containsKey("article")) {
-        if (Parcelable::class.java.isAssignableFrom(ArticleStructure::class.java) ||
-            Serializable::class.java.isAssignableFrom(ArticleStructure::class.java)) {
-          __article = bundle.get("article") as ArticleStructure?
+        if (Parcelable::class.java.isAssignableFrom(Article::class.java) ||
+            Serializable::class.java.isAssignableFrom(Article::class.java)) {
+          __article = bundle.get("article") as Article?
         } else {
-          throw UnsupportedOperationException(ArticleStructure::class.java.name +
+          throw UnsupportedOperationException(Article::class.java.name +
               " must implement Parcelable or Serializable or must be an Enum.")
         }
         if (__article == null) {

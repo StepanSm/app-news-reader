@@ -28,9 +28,6 @@ public final class FragmentAboutAppBinding implements ViewBinding {
   public final TextView appName;
 
   @NonNull
-  public final AppCompatButton articleButton;
-
-  @NonNull
   public final TextView description;
 
   @NonNull
@@ -40,22 +37,25 @@ public final class FragmentAboutAppBinding implements ViewBinding {
   public final FloatingActionButton fab;
 
   @NonNull
+  public final AppCompatButton goWebView;
+
+  @NonNull
   public final ConstraintLayout motionLayout;
 
   @NonNull
   public final ImageView toolbarImage;
 
   private FragmentAboutAppBinding(@NonNull ConstraintLayout rootView, @NonNull TextView aboutApp,
-      @NonNull TextView appName, @NonNull AppCompatButton articleButton,
-      @NonNull TextView description, @NonNull View divider, @NonNull FloatingActionButton fab,
+      @NonNull TextView appName, @NonNull TextView description, @NonNull View divider,
+      @NonNull FloatingActionButton fab, @NonNull AppCompatButton goWebView,
       @NonNull ConstraintLayout motionLayout, @NonNull ImageView toolbarImage) {
     this.rootView = rootView;
     this.aboutApp = aboutApp;
     this.appName = appName;
-    this.articleButton = articleButton;
     this.description = description;
     this.divider = divider;
     this.fab = fab;
+    this.goWebView = goWebView;
     this.motionLayout = motionLayout;
     this.toolbarImage = toolbarImage;
   }
@@ -99,12 +99,6 @@ public final class FragmentAboutAppBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.article_button;
-      AppCompatButton articleButton = rootView.findViewById(id);
-      if (articleButton == null) {
-        break missingId;
-      }
-
       id = R.id.description;
       TextView description = rootView.findViewById(id);
       if (description == null) {
@@ -123,6 +117,12 @@ public final class FragmentAboutAppBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.go_web_view;
+      AppCompatButton goWebView = rootView.findViewById(id);
+      if (goWebView == null) {
+        break missingId;
+      }
+
       ConstraintLayout motionLayout = (ConstraintLayout) rootView;
 
       id = R.id.toolbar_image;
@@ -132,7 +132,7 @@ public final class FragmentAboutAppBinding implements ViewBinding {
       }
 
       return new FragmentAboutAppBinding((ConstraintLayout) rootView, aboutApp, appName,
-          articleButton, description, divider, fab, motionLayout, toolbarImage);
+          description, divider, fab, goWebView, motionLayout, toolbarImage);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

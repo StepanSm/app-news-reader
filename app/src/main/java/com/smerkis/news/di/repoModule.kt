@@ -6,5 +6,5 @@ import org.koin.dsl.bind
 import org.koin.dsl.module
 
 val repositoryModule = module {
-    single { NewsRepository(get(), get()) } bind (NewsRepo::class)
+    single { NewsRepository(get()) } bind (NewsRepo::class)
 }

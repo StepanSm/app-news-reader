@@ -59,7 +59,6 @@
         android:id="@+id/divider"
         android:layout_width="0dp"
         android:layout_height="20dp"
-        android:background="@drawable/shadow"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/about_app" />
@@ -91,7 +90,7 @@
         app:layout_constraintTop_toBottomOf="@+id/divider" />
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/article_button"
+        android:id="@+id/go_web_view"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="16dp"

@@ -1,1 +1,1 @@
-[{"navFile":"src/main/res/navigation/navigation.xml","javaFiles":["com.smerkis.news.ui.MainFragmentDirections","com.smerkis.news.ui.ArticleFragmentArgs"]}]
+[{"navFile":"src/main/res/navigation/navigation.xml","javaFiles":["com.smerkis.news.ui.MainFragmentDirections","com.smerkis.news.ui.ArticleFragmentDirections","com.smerkis.news.ui.ArticleFragmentArgs","com.smerkis.news.ui.SearchFragmentDirections","com.smerkis.news.ui.WebViewFragmentArgs"]}]

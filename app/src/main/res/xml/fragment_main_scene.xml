@@ -10,7 +10,7 @@
         <OnSwipe
             motion:dragDirection="dragUp"
             motion:moveWhenScrollAtTop="false"
-            motion:touchAnchorId="@+id/nsv"
+            motion:touchAnchorId="@+id/vp"
             motion:touchAnchorSide="top" />
 
     </Transition>
@@ -22,16 +22,16 @@
             android:id="@+id/app_bar"
             android:layout_width="match_parent"
             android:layout_height="?actionBarSize"
-            android:visibility="invisible"
+            android:visibility="visible"
+            motion:layout_constraintBottom_toTopOf="parent"
             motion:layout_constraintEnd_toEndOf="parent"
-            motion:layout_constraintStart_toStartOf="parent"
-            motion:layout_constraintTop_toTopOf="parent" />
+            motion:layout_constraintStart_toStartOf="parent" />
         <Constraint
             android:id="@+id/tabs"
             android:layout_width="match_parent"
-            android:layout_height="56dp"
+            android:layout_height="?actionBarSize"
             motion:layout_constraintEnd_toEndOf="parent"
             motion:layout_constraintStart_toStartOf="parent"
-            motion:layout_constraintTop_toTopOf="parent" />
+            motion:layout_constraintTop_toBottomOf="@+id/app_bar" />
     </ConstraintSet>
 </MotionScene>

@@ -29,7 +29,6 @@ MERGED from [androidx.navigation:navigation-common-ktx:2.3.1] /home/stepan/.grad
 MERGED from [androidx.compose.runtime:runtime-dispatch:1.0.0-alpha05] /home/stepan/.gradle/caches/transforms-2/files-2.1/2c4f1daf6dea37aa558b9fdf3a702917/jetified-runtime-dispatch-1.0.0-alpha05/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.core:core-ktx:1.3.2] /home/stepan/.gradle/caches/transforms-2/files-2.1/e9dc943a2253eae69c7d3cad2ea2eac0/jetified-core-ktx-1.3.2/AndroidManifest.xml:2:1-9:12
 MERGED from [androidx.lifecycle:lifecycle-livedata-ktx:2.3.0-beta01] /home/stepan/.gradle/caches/transforms-2/files-2.1/83fb9cb33c8c2511bccd11a93ba927d1/jetified-lifecycle-livedata-ktx-2.3.0-beta01/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.room:room-ktx:2.2.5] /home/stepan/.gradle/caches/transforms-2/files-2.1/dec844883f54cab225b3ee972f3ec6cf/jetified-room-ktx-2.2.5/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.lifecycle:lifecycle-livedata-core-ktx:2.3.0-beta01] /home/stepan/.gradle/caches/transforms-2/files-2.1/b3294b4fcadf9e7051704d92b226e536/jetified-lifecycle-livedata-core-ktx-2.3.0-beta01/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.3.0-beta01] /home/stepan/.gradle/caches/transforms-2/files-2.1/a16e8e8f767a06f635d6dec3e45e5962/jetified-lifecycle-viewmodel-ktx-2.3.0-beta01/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.savedstate:savedstate-ktx:1.1.0-beta01] /home/stepan/.gradle/caches/transforms-2/files-2.1/8885e2bd5f848af58ccd3d5c1e753985/jetified-savedstate-ktx-1.1.0-beta01/AndroidManifest.xml:17:1-24:12
@@ -44,7 +43,6 @@ MERGED from [androidx.legacy:legacy-support-v4:1.0.0] /home/stepan/.gradle/cache
 MERGED from [androidx.cardview:cardview:1.0.0] /home/stepan/.gradle/caches/transforms-2/files-2.1/2d8cca71c036ebd6e04ef15773571b78/cardview-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /home/stepan/.gradle/caches/transforms-2/files-2.1/3a660e258a2aed465ee75ab01ce6cc12/legacy-support-core-ui-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.1.0] /home/stepan/.gradle/caches/transforms-2/files-2.1/0df5f9f70d83113b6974b90e62b0136d/swiperefreshlayout-1.1.0/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.room:room-runtime:2.2.5] /home/stepan/.gradle/caches/transforms-2/files-2.1/3d959f5ae69bc2876b415799536936c7/room-runtime-2.2.5/AndroidManifest.xml:17:1-31:12
 MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /home/stepan/.gradle/caches/transforms-2/files-2.1/8e6b71034f22f57976e580c05aeb00f0/cursoradapter-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /home/stepan/.gradle/caches/transforms-2/files-2.1/c679d35ca0ec3a98fce5575df591001a/drawerlayout-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] /home/stepan/.gradle/caches/transforms-2/files-2.1/aa88968d2c2a591a017df88420e45198/coordinatorlayout-1.1.0/AndroidManifest.xml:17:1-24:12
@@ -55,12 +53,10 @@ MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /home/stepan/.gradle/
 MERGED from [androidx.viewpager2:viewpager2:1.0.0] /home/stepan/.gradle/caches/transforms-2/files-2.1/ec8e208d5a3e47cdc831d8d824762962/jetified-viewpager2-1.0.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.media:media:1.0.0] /home/stepan/.gradle/caches/transforms-2/files-2.1/93c16452899f3233cfc1ea889f99774b/media-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /home/stepan/.gradle/caches/transforms-2/files-2.1/86cd32785319cfa040eb91849c2c36b6/legacy-support-core-utils-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.interpolator:interpolator:1.0.0] /home/stepan/.gradle/caches/transforms-2/files-2.1/0fdb42395f4db8707d85cd839cc89306/interpolator-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.navigation:navigation-fragment:2.3.1] /home/stepan/.gradle/caches/transforms-2/files-2.1/0836847889095a4c9e6cacf2b1642690/navigation-fragment-2.3.1/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.lifecycle:lifecycle-extensions:2.2.0] /home/stepan/.gradle/caches/transforms-2/files-2.1/5cb07a2aed4f87379cbce408e561fdf2/lifecycle-extensions-2.2.0/AndroidManifest.xml:17:1-27:12
 MERGED from [androidx.fragment:fragment:1.3.0-beta01] /home/stepan/.gradle/caches/transforms-2/files-2.1/602d96888e15f896fb50414fdbe0c4ce/fragment-1.3.0-beta01/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.interpolator:interpolator:1.0.0] /home/stepan/.gradle/caches/transforms-2/files-2.1/0fdb42395f4db8707d85cd839cc89306/interpolator-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.sqlite:sqlite-framework:2.0.1] /home/stepan/.gradle/caches/transforms-2/files-2.1/e288d514bdca267f6a02ac3ed9091993/sqlite-framework-2.0.1/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.sqlite:sqlite:2.0.1] /home/stepan/.gradle/caches/transforms-2/files-2.1/5f6fa32f9ae40b2ddb734ae650e0ea38/sqlite-2.0.1/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.recyclerview:recyclerview:1.1.0] /home/stepan/.gradle/caches/transforms-2/files-2.1/2a2be0803496b1e8932e76f108dd2973/recyclerview-1.1.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.viewpager:viewpager:1.0.0] /home/stepan/.gradle/caches/transforms-2/files-2.1/819bffeefd23ec3997835ffde2387801/viewpager-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] /home/stepan/.gradle/caches/transforms-2/files-2.1/e4a04d9b8033f4d7fedc6a3af138d0bf/slidingpanelayout-1.0.0/AndroidManifest.xml:17:1-22:12
@@ -120,8 +116,6 @@ MERGED from [com.google.android.material:material:1.2.1] /home/stepan/.gradle/ca
 MERGED from [com.google.android.material:material:1.2.1] /home/stepan/.gradle/caches/transforms-2/files-2.1/2550c3166846d7e2f4919bc0b76b4b3b/material-1.2.1/AndroidManifest.xml:22:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.0.4] /home/stepan/.gradle/caches/transforms-2/files-2.1/8e232342df184ad643d3856170b088e8/constraintlayout-2.0.4/AndroidManifest.xml:9:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.0.4] /home/stepan/.gradle/caches/transforms-2/files-2.1/8e232342df184ad643d3856170b088e8/constraintlayout-2.0.4/AndroidManifest.xml:9:5-20
-MERGED from [androidx.room:room-runtime:2.2.5] /home/stepan/.gradle/caches/transforms-2/files-2.1/3d959f5ae69bc2876b415799536936c7/room-runtime-2.2.5/AndroidManifest.xml:24:5-29:19
-MERGED from [androidx.room:room-runtime:2.2.5] /home/stepan/.gradle/caches/transforms-2/files-2.1/3d959f5ae69bc2876b415799536936c7/room-runtime-2.2.5/AndroidManifest.xml:24:5-29:19
 MERGED from [androidx.lifecycle:lifecycle-extensions:2.2.0] /home/stepan/.gradle/caches/transforms-2/files-2.1/5cb07a2aed4f87379cbce408e561fdf2/lifecycle-extensions-2.2.0/AndroidManifest.xml:24:5-25:19
 MERGED from [androidx.lifecycle:lifecycle-extensions:2.2.0] /home/stepan/.gradle/caches/transforms-2/files-2.1/5cb07a2aed4f87379cbce408e561fdf2/lifecycle-extensions-2.2.0/AndroidManifest.xml:24:5-25:19
 MERGED from [androidx.core:core:1.5.0-alpha01] /home/stepan/.gradle/caches/transforms-2/files-2.1/86f8eccee746a94942c3d56b8a247962/core-1.5.0-alpha01/AndroidManifest.xml:24:5-89
@@ -212,8 +206,6 @@ MERGED from [androidx.core:core-ktx:1.3.2] /home/stepan/.gradle/caches/transform
 MERGED from [androidx.core:core-ktx:1.3.2] /home/stepan/.gradle/caches/transforms-2/files-2.1/e9dc943a2253eae69c7d3cad2ea2eac0/jetified-core-ktx-1.3.2/AndroidManifest.xml:5:5-7:41
 MERGED from [androidx.lifecycle:lifecycle-livedata-ktx:2.3.0-beta01] /home/stepan/.gradle/caches/transforms-2/files-2.1/83fb9cb33c8c2511bccd11a93ba927d1/jetified-lifecycle-livedata-ktx-2.3.0-beta01/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.lifecycle:lifecycle-livedata-ktx:2.3.0-beta01] /home/stepan/.gradle/caches/transforms-2/files-2.1/83fb9cb33c8c2511bccd11a93ba927d1/jetified-lifecycle-livedata-ktx-2.3.0-beta01/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.room:room-ktx:2.2.5] /home/stepan/.gradle/caches/transforms-2/files-2.1/dec844883f54cab225b3ee972f3ec6cf/jetified-room-ktx-2.2.5/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.room:room-ktx:2.2.5] /home/stepan/.gradle/caches/transforms-2/files-2.1/dec844883f54cab225b3ee972f3ec6cf/jetified-room-ktx-2.2.5/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.lifecycle:lifecycle-livedata-core-ktx:2.3.0-beta01] /home/stepan/.gradle/caches/transforms-2/files-2.1/b3294b4fcadf9e7051704d92b226e536/jetified-lifecycle-livedata-core-ktx-2.3.0-beta01/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.lifecycle:lifecycle-livedata-core-ktx:2.3.0-beta01] /home/stepan/.gradle/caches/transforms-2/files-2.1/b3294b4fcadf9e7051704d92b226e536/jetified-lifecycle-livedata-core-ktx-2.3.0-beta01/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.3.0-beta01] /home/stepan/.gradle/caches/transforms-2/files-2.1/a16e8e8f767a06f635d6dec3e45e5962/jetified-lifecycle-viewmodel-ktx-2.3.0-beta01/AndroidManifest.xml:20:5-22:41
@@ -242,8 +234,6 @@ MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /home/stepan/.gradle/
 MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /home/stepan/.gradle/caches/transforms-2/files-2.1/3a660e258a2aed465ee75ab01ce6cc12/legacy-support-core-ui-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.1.0] /home/stepan/.gradle/caches/transforms-2/files-2.1/0df5f9f70d83113b6974b90e62b0136d/swiperefreshlayout-1.1.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.1.0] /home/stepan/.gradle/caches/transforms-2/files-2.1/0df5f9f70d83113b6974b90e62b0136d/swiperefreshlayout-1.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.room:room-runtime:2.2.5] /home/stepan/.gradle/caches/transforms-2/files-2.1/3d959f5ae69bc2876b415799536936c7/room-runtime-2.2.5/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.room:room-runtime:2.2.5] /home/stepan/.gradle/caches/transforms-2/files-2.1/3d959f5ae69bc2876b415799536936c7/room-runtime-2.2.5/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /home/stepan/.gradle/caches/transforms-2/files-2.1/8e6b71034f22f57976e580c05aeb00f0/cursoradapter-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /home/stepan/.gradle/caches/transforms-2/files-2.1/8e6b71034f22f57976e580c05aeb00f0/cursoradapter-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /home/stepan/.gradle/caches/transforms-2/files-2.1/c679d35ca0ec3a98fce5575df591001a/drawerlayout-1.0.0/AndroidManifest.xml:20:5-44
@@ -264,18 +254,14 @@ MERGED from [androidx.media:media:1.0.0] /home/stepan/.gradle/caches/transforms-
 MERGED from [androidx.media:media:1.0.0] /home/stepan/.gradle/caches/transforms-2/files-2.1/93c16452899f3233cfc1ea889f99774b/media-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /home/stepan/.gradle/caches/transforms-2/files-2.1/86cd32785319cfa040eb91849c2c36b6/legacy-support-core-utils-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /home/stepan/.gradle/caches/transforms-2/files-2.1/86cd32785319cfa040eb91849c2c36b6/legacy-support-core-utils-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] /home/stepan/.gradle/caches/transforms-2/files-2.1/0fdb42395f4db8707d85cd839cc89306/interpolator-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] /home/stepan/.gradle/caches/transforms-2/files-2.1/0fdb42395f4db8707d85cd839cc89306/interpolator-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.navigation:navigation-fragment:2.3.1] /home/stepan/.gradle/caches/transforms-2/files-2.1/0836847889095a4c9e6cacf2b1642690/navigation-fragment-2.3.1/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.navigation:navigation-fragment:2.3.1] /home/stepan/.gradle/caches/transforms-2/files-2.1/0836847889095a4c9e6cacf2b1642690/navigation-fragment-2.3.1/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.lifecycle:lifecycle-extensions:2.2.0] /home/stepan/.gradle/caches/transforms-2/files-2.1/5cb07a2aed4f87379cbce408e561fdf2/lifecycle-extensions-2.2.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.lifecycle:lifecycle-extensions:2.2.0] /home/stepan/.gradle/caches/transforms-2/files-2.1/5cb07a2aed4f87379cbce408e561fdf2/lifecycle-extensions-2.2.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.fragment:fragment:1.3.0-beta01] /home/stepan/.gradle/caches/transforms-2/files-2.1/602d96888e15f896fb50414fdbe0c4ce/fragment-1.3.0-beta01/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.fragment:fragment:1.3.0-beta01] /home/stepan/.gradle/caches/transforms-2/files-2.1/602d96888e15f896fb50414fdbe0c4ce/fragment-1.3.0-beta01/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.interpolator:interpolator:1.0.0] /home/stepan/.gradle/caches/transforms-2/files-2.1/0fdb42395f4db8707d85cd839cc89306/interpolator-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.interpolator:interpolator:1.0.0] /home/stepan/.gradle/caches/transforms-2/files-2.1/0fdb42395f4db8707d85cd839cc89306/interpolator-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.sqlite:sqlite-framework:2.0.1] /home/stepan/.gradle/caches/transforms-2/files-2.1/e288d514bdca267f6a02ac3ed9091993/sqlite-framework-2.0.1/AndroidManifest.xml:20:5-44
-MERGED from [androidx.sqlite:sqlite-framework:2.0.1] /home/stepan/.gradle/caches/transforms-2/files-2.1/e288d514bdca267f6a02ac3ed9091993/sqlite-framework-2.0.1/AndroidManifest.xml:20:5-44
-MERGED from [androidx.sqlite:sqlite:2.0.1] /home/stepan/.gradle/caches/transforms-2/files-2.1/5f6fa32f9ae40b2ddb734ae650e0ea38/sqlite-2.0.1/AndroidManifest.xml:20:5-44
-MERGED from [androidx.sqlite:sqlite:2.0.1] /home/stepan/.gradle/caches/transforms-2/files-2.1/5f6fa32f9ae40b2ddb734ae650e0ea38/sqlite-2.0.1/AndroidManifest.xml:20:5-44
 MERGED from [androidx.recyclerview:recyclerview:1.1.0] /home/stepan/.gradle/caches/transforms-2/files-2.1/2a2be0803496b1e8932e76f108dd2973/recyclerview-1.1.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.recyclerview:recyclerview:1.1.0] /home/stepan/.gradle/caches/transforms-2/files-2.1/2a2be0803496b1e8932e76f108dd2973/recyclerview-1.1.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.viewpager:viewpager:1.0.0] /home/stepan/.gradle/caches/transforms-2/files-2.1/819bffeefd23ec3997835ffde2387801/viewpager-1.0.0/AndroidManifest.xml:20:5-44
@@ -334,11 +320,3 @@ INJECTED from /home/stepan/AndroidStudioProjects/NEWS/app/src/main/AndroidManife
 		INJECTED from /home/stepan/AndroidStudioProjects/NEWS/app/src/main/AndroidManifest.xml
 		ADDED from /home/stepan/AndroidStudioProjects/NEWS/app/src/main/AndroidManifest.xml
 		INJECTED from /home/stepan/AndroidStudioProjects/NEWS/app/src/main/AndroidManifest.xml
-service#androidx.room.MultiInstanceInvalidationService
-ADDED from [androidx.room:room-runtime:2.2.5] /home/stepan/.gradle/caches/transforms-2/files-2.1/3d959f5ae69bc2876b415799536936c7/room-runtime-2.2.5/AndroidManifest.xml:25:9-28:40
-	android:exported
-		ADDED from [androidx.room:room-runtime:2.2.5] /home/stepan/.gradle/caches/transforms-2/files-2.1/3d959f5ae69bc2876b415799536936c7/room-runtime-2.2.5/AndroidManifest.xml:28:13-37
-	android:directBootAware
-		ADDED from [androidx.room:room-runtime:2.2.5] /home/stepan/.gradle/caches/transforms-2/files-2.1/3d959f5ae69bc2876b415799536936c7/room-runtime-2.2.5/AndroidManifest.xml:27:13-43
-	android:name
-		ADDED from [androidx.room:room-runtime:2.2.5] /home/stepan/.gradle/caches/transforms-2/files-2.1/3d959f5ae69bc2876b415799536936c7/room-runtime-2.2.5/AndroidManifest.xml:26:13-74

@@ -51,15 +51,6 @@
 29-->/home/stepan/AndroidStudioProjects/NEWS/app/src/main/AndroidManifest.xml:20:27-74
 30            </intent-filter>
 31        </activity>
-32
-33        <service
-33-->[androidx.room:room-runtime:2.2.5] /home/stepan/.gradle/caches/transforms-2/files-2.1/3d959f5ae69bc2876b415799536936c7/room-runtime-2.2.5/AndroidManifest.xml:25:9-28:40
-34            android:name="androidx.room.MultiInstanceInvalidationService"
-34-->[androidx.room:room-runtime:2.2.5] /home/stepan/.gradle/caches/transforms-2/files-2.1/3d959f5ae69bc2876b415799536936c7/room-runtime-2.2.5/AndroidManifest.xml:26:13-74
-35            android:directBootAware="true"
-35-->[androidx.room:room-runtime:2.2.5] /home/stepan/.gradle/caches/transforms-2/files-2.1/3d959f5ae69bc2876b415799536936c7/room-runtime-2.2.5/AndroidManifest.xml:27:13-43
-36            android:exported="false" />
-36-->[androidx.room:room-runtime:2.2.5] /home/stepan/.gradle/caches/transforms-2/files-2.1/3d959f5ae69bc2876b415799536936c7/room-runtime-2.2.5/AndroidManifest.xml:28:13-37
-37    </application>
-38
-39</manifest>
+32    </application>
+33
+34</manifest>

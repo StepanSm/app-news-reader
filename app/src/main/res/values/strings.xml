@@ -35,9 +35,8 @@
         <item>TOP HEADLINES</item>
         <item>LATEST HEADLINES</item>
     </string-array>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="search_hint">search news</string>
-    <string name="et_search_fragment__hint">Search for eg: \'Bitcoin\'</string>
+    <string name="et_search_fragment__hint">Search for eg: \'Vote\'</string>
+    <string name="dialog_missing_message">Message is missing</string>
 
 </resources>

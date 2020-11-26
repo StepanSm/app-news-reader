@@ -4,11 +4,15 @@ package com.smerkis.news.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.webkit.WebView;
 import android.widget.ProgressBar;
+import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.appcompat.widget.Toolbar;
 import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.viewbinding.ViewBinding;
+import com.google.android.material.appbar.AppBarLayout;
 import com.smerkis.news.R;
 import java.lang.NullPointerException;
 import java.lang.Override;
@@ -19,16 +23,29 @@ public final class FragmentWebViewBinding implements ViewBinding {
   private final ConstraintLayout rootView;
 
   @NonNull
-  public final ContentBrowserFullBinding include;
+  public final AppBarLayout appBar;
 
   @NonNull
-  public final ProgressBar progressBar;
+  public final ProgressBar pb;
 
-  private FragmentWebViewBinding(@NonNull ConstraintLayout rootView,
-      @NonNull ContentBrowserFullBinding include, @NonNull ProgressBar progressBar) {
+  @NonNull
+  public final TextView title;
+
+  @NonNull
+  public final Toolbar toolbar;
+
+  @NonNull
+  public final WebView webView;
+
+  private FragmentWebViewBinding(@NonNull ConstraintLayout rootView, @NonNull AppBarLayout appBar,
+      @NonNull ProgressBar pb, @NonNull TextView title, @NonNull Toolbar toolbar,
+      @NonNull WebView webView) {
     this.rootView = rootView;
-    this.include = include;
-    this.progressBar = progressBar;
+    this.appBar = appBar;
+    this.pb = pb;
+    this.title = title;
+    this.toolbar = toolbar;
+    this.webView = webView;
   }
 
   @Override
@@ -58,20 +75,38 @@ public final class FragmentWebViewBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.include;
-      View include = rootView.findViewById(id);
-      if (include == null) {
-        break missingId;
-      }
-      ContentBrowserFullBinding binding_include = ContentBrowserFullBinding.bind(include);
-
-      id = R.id.progressBar;
-      ProgressBar progressBar = rootView.findViewById(id);
-      if (progressBar == null) {
+      id = R.id.app_bar;
+      AppBarLayout appBar = rootView.findViewById(id);
+      if (appBar == null) {
         break missingId;
       }
 
-      return new FragmentWebViewBinding((ConstraintLayout) rootView, binding_include, progressBar);
+      id = R.id.pb;
+      ProgressBar pb = rootView.findViewById(id);
+      if (pb == null) {
+        break missingId;
+      }
+
+      id = R.id.title;
+      TextView title = rootView.findViewById(id);
+      if (title == null) {
+        break missingId;
+      }
+
+      id = R.id.toolbar;
+      Toolbar toolbar = rootView.findViewById(id);
+      if (toolbar == null) {
+        break missingId;
+      }
+
+      id = R.id.web_view;
+      WebView webView = rootView.findViewById(id);
+      if (webView == null) {
+        break missingId;
+      }
+
+      return new FragmentWebViewBinding((ConstraintLayout) rootView, appBar, pb, title, toolbar,
+          webView);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

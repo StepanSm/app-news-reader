@@ -1,25 +1,5 @@
 [
     {
-        "merged": "/home/stepan/AndroidStudioProjects/NEWS/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/content_browser_full.xml",
-        "source": "/home/stepan/AndroidStudioProjects/NEWS/app/src/main/res/layout/content_browser_full.xml"
-    },
-    {
-        "merged": "/home/stepan/AndroidStudioProjects/NEWS/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_main.xml",
-        "source": "/home/stepan/AndroidStudioProjects/NEWS/app/src/main/res/layout/activity_main.xml"
-    },
-    {
-        "merged": "/home/stepan/AndroidStudioProjects/NEWS/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/fragment_search.xml",
-        "source": "/home/stepan/AndroidStudioProjects/NEWS/app/src/main/res/layout/fragment_search.xml"
-    },
-    {
-        "merged": "/home/stepan/AndroidStudioProjects/NEWS/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/item_repo_state.xml",
-        "source": "/home/stepan/AndroidStudioProjects/NEWS/app/src/main/res/layout/item_repo_state.xml"
-    },
-    {
-        "merged": "/home/stepan/AndroidStudioProjects/NEWS/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/fragment_main.xml",
-        "source": "/home/stepan/AndroidStudioProjects/NEWS/app/src/main/res/layout/fragment_main.xml"
-    },
-    {
         "merged": "/home/stepan/AndroidStudioProjects/NEWS/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/rv_news_feed.xml",
         "source": "/home/stepan/AndroidStudioProjects/NEWS/app/src/main/res/layout/rv_news_feed.xml"
     },
@@ -32,19 +12,31 @@
         "source": "/home/stepan/AndroidStudioProjects/NEWS/app/src/main/res/layout/fragment_web_view.xml"
     },
     {
-        "merged": "/home/stepan/AndroidStudioProjects/NEWS/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/item_article.xml",
-        "source": "/home/stepan/AndroidStudioProjects/NEWS/app/src/main/res/layout/item_article.xml"
-    },
-    {
         "merged": "/home/stepan/AndroidStudioProjects/NEWS/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/fragment_article.xml",
         "source": "/home/stepan/AndroidStudioProjects/NEWS/app/src/main/res/layout/fragment_article.xml"
     },
     {
-        "merged": "/home/stepan/AndroidStudioProjects/NEWS/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/toolbar.xml",
-        "source": "/home/stepan/AndroidStudioProjects/NEWS/app/src/main/res/layout/toolbar.xml"
+        "merged": "/home/stepan/AndroidStudioProjects/NEWS/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/item_article.xml",
+        "source": "/home/stepan/AndroidStudioProjects/NEWS/app/src/main/res/layout/item_article.xml"
+    },
+    {
+        "merged": "/home/stepan/AndroidStudioProjects/NEWS/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_main.xml",
+        "source": "/home/stepan/AndroidStudioProjects/NEWS/app/src/main/res/layout/activity_main.xml"
     },
     {
         "merged": "/home/stepan/AndroidStudioProjects/NEWS/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/fragment_about_app.xml",
         "source": "/home/stepan/AndroidStudioProjects/NEWS/app/src/main/res/layout/fragment_about_app.xml"
+    },
+    {
+        "merged": "/home/stepan/AndroidStudioProjects/NEWS/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/fragment_search.xml",
+        "source": "/home/stepan/AndroidStudioProjects/NEWS/app/src/main/res/layout/fragment_search.xml"
+    },
+    {
+        "merged": "/home/stepan/AndroidStudioProjects/NEWS/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/item_repo_state.xml",
+        "source": "/home/stepan/AndroidStudioProjects/NEWS/app/src/main/res/layout/item_repo_state.xml"
+    },
+    {
+        "merged": "/home/stepan/AndroidStudioProjects/NEWS/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/fragment_main.xml",
+        "source": "/home/stepan/AndroidStudioProjects/NEWS/app/src/main/res/layout/fragment_main.xml"
     }
 ]
