@@ -13,7 +13,7 @@ interface NewsApi {
         @Query("apiKey") apiKey: String
     ): NewsResponse
 
-    @GET("everything")
+    @GET("everything?pageSize=20")
     suspend fun getSearchResults(
         @Query("q") query: String,
         @Query("sortBy") sortBy: String,

@@ -23,11 +23,11 @@ class SearchFragment : BaseFragment(R.layout.fragment_search) {
 
     private val binding: FragmentSearchBinding by viewBinding(FragmentSearchBinding::bind)
     private val vModel: SearchViewModel by viewModel()
+    private var mQuery = ""
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         createToolbar(binding.tb, true)
-        setupRecycle()
         setupSearchViewListener()
     }
 
@@ -35,11 +35,14 @@ class SearchFragment : BaseFragment(R.layout.fragment_search) {
     private fun setupSearchViewListener() {
         binding.searchView.apply {
             queryHint = getString(R.string.search_fragment__hint)
-            setIconifiedByDefault(false)
 
-            setOnQueryTextFocusChangeListener { v, hasFocus ->
-                if (hasFocus) {
-                    v?.findFocus()?.let { showInputMethod(it) }
+            if (mQuery.isEmpty()) {
+                setIconifiedByDefault(false)
+
+                setOnQueryTextFocusChangeListener { v, hasFocus ->
+                    if (hasFocus) {
+                        v?.findFocus()?.let { showInputMethod(it) }
+                    }
                 }
             }
 
@@ -49,7 +52,13 @@ class SearchFragment : BaseFragment(R.layout.fragment_search) {
                 }
 
                 override fun onQueryTextChange(query: String?): Boolean {
-                    query?.let { vModel.getSearchResult(it, 1) }
+                    query?.let {
+                        if (it.length > 2) {
+                            mQuery = query
+                            setupRecycle()
+                        }
+                    }
+
                     return true
                 }
             })
@@ -89,12 +98,16 @@ class SearchFragment : BaseFragment(R.layout.fragment_search) {
     }
 
     private fun setupData(recycling: Recycling<Article>, page: Int) {
-        vModel.searchListResult.observe(viewLifecycleOwner) {
-            binding.tvNoResults.visibility = if (it.isNullOrEmpty()) View.VISIBLE else View.GONE
-            recycling.submitList(it)
+        vModel.getSearchResult(mQuery, page).observe(viewLifecycleOwner) { newsList ->
+
+            recycling.submitList(newsList)
+            binding.tvNoResults.visibility = View.GONE
+
         }
         vModel.errorData.observe(viewLifecycleOwner) {
             Toast.makeText(context, "${it.message}", Toast.LENGTH_SHORT).show()
         }
+
     }
+
 }

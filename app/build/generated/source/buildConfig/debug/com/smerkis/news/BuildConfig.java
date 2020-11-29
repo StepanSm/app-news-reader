@@ -10,5 +10,5 @@ public final class BuildConfig {
   public static final int VERSION_CODE = 1;
   public static final String VERSION_NAME = "1.0";
   // Field from default config.
-  public static final String API_KEY = "7ab0b19b6b2142bd8dd2e0ab78258be9";
+  public static final String API_KEY = "3d93745f81e44545a412a4d8dd346904";
 }
