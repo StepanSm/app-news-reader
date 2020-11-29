@@ -2,7 +2,6 @@ package com.smerkis.news.ui
 
 import android.os.Bundle
 import android.view.View
-import android.widget.Toast
 import androidx.appcompat.widget.SearchView
 import androidx.recyclerview.widget.LinearLayoutManager
 import by.kirich1409.viewbindingdelegate.viewBinding
@@ -105,7 +104,7 @@ class SearchFragment : BaseFragment(R.layout.fragment_search) {
 
         }
         vModel.errorData.observe(viewLifecycleOwner) {
-            Toast.makeText(context, "${it.message}", Toast.LENGTH_SHORT).show()
+            errorHandler(it)
         }
 
     }

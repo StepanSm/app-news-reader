@@ -45,7 +45,7 @@ class MainFragment : BaseFragment(R.layout.fragment_main) {
         when (item.itemId) {
             R.id.about_app -> navigate(MainFragmentDirections.actionMainFragmentToAboutAppFragment())
             R.id.action_search -> navigate(MainFragmentDirections.actionMainFragmentToSearchFragment())
-            R.id.app_source -> openBrowser("https://github.com/StepanSm")
+            R.id.app_source -> openBrowser("https://github.com/StepanSm/app-news-reader")
         }
         return super.onOptionsItemSelected(item)
     }

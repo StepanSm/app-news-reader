@@ -58,7 +58,7 @@ class NewsListFragment : BaseFragment(R.layout.rv_news_feed), SwipeRefreshLayout
         }
         vModel.errorData.observe(viewLifecycleOwner) {
             binding.swipeRefresh.isRefreshing = false
-            showLongToast("Something went wrong ¯\\_(ツ)_/¯ => ${it.message}")
+            errorHandler(it)
         }
     }
 

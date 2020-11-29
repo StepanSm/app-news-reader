@@ -12,7 +12,6 @@ import kotlinx.coroutines.launch
 
 class SearchViewModel(private val repo: NewsRepo) : ViewModel() {
 
-    val searchListResult: MutableLiveData<List<Article>> by lazy { MutableLiveData() }
     val errorData: MutableLiveData<Throwable> by lazy { MutableLiveData<Throwable>() }
 
     fun getSearchResult(searchRequest: String, page: Int): LiveData<List<Article>?> {
@@ -28,16 +27,4 @@ class SearchViewModel(private val repo: NewsRepo) : ViewModel() {
         }
         return newList
     }
-
 }
-//fun getSearchResult(searchRequest: String, page: Int) {
-//
-//    viewModelScope.launch {
-//        repo.getSearchResult(searchRequest, page).catch {
-//            errorData.value = it
-//        }.collect {
-//            searchListResult.value = it
-//        }
-//    }
-//
-//}

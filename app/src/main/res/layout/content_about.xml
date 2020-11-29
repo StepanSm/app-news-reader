@@ -85,16 +85,6 @@
                 android:background="@color/black" />
 
             <TextView
-                android:id="@+id/error_handler"
-                style="@style/lib_item_tv"
-                android:text="KotlinErrorHandler" />
-
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="0.5dp"
-                android:background="@color/black" />
-
-            <TextView
                 android:id="@+id/jetpack"
                 style="@style/lib_item_tv"
                 android:text="Other Android Jetpack components" />

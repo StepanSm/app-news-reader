@@ -1816,7 +1816,6 @@ id elev
 id end
 id enterAlways
 id enterAlwaysCollapsed
-id error_handler
 id exitUntilCollapsed
 id expand_activities_button
 id expanded_menu

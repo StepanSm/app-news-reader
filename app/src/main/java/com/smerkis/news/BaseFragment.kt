@@ -11,6 +11,7 @@ import androidx.appcompat.widget.Toolbar
 import androidx.fragment.app.Fragment
 import androidx.navigation.NavDirections
 import androidx.navigation.fragment.findNavController
+import retrofit2.HttpException
 
 abstract class BaseFragment(layoutId: Int) : Fragment(layoutId) {
 
@@ -50,7 +51,7 @@ abstract class BaseFragment(layoutId: Int) : Fragment(layoutId) {
         startActivity(intent)
     }
 
-    fun showInfoDialog(title: String, message: String?, call: (() -> Unit)? = null) {
+    protected fun showInfoDialog(title: String, message: String?, call: (() -> Unit)? = null) {
         AlertDialog.Builder(activity as Context)
             .setTitle(title)
             .setMessage(message ?: getString(R.string.dialog_missing_message))
@@ -62,15 +63,26 @@ abstract class BaseFragment(layoutId: Int) : Fragment(layoutId) {
             .show()
     }
 
-    fun showShortToast(msg: String) {
+    protected fun showShortToast(msg: String) {
         Toast.makeText(activity as Context, msg, Toast.LENGTH_SHORT).show()
     }
 
-    fun showLongToast(msg: String) {
+    protected fun showLongToast(msg: String) {
         Toast.makeText(activity as Context, msg, Toast.LENGTH_LONG).show()
     }
 
-    protected fun errorHandler(e: Throwable) {
+    protected fun errorHandler(throwable: Throwable) {
+        if (throwable is HttpException && throwable.code() == 429) {
+            showLongToast("")
+            showShortToast("Too Many Requests")
+        } else if (throwable is HttpException && throwable.code() == 404) {
+            showShortToast("Not Found")
+        } else {
+            showInfoDialog("Error", "Something went wrong ¯\\_(ツ)_/¯ => ${throwable.message}") {
+                activity().finish()
+            }
+        }
+
 
     }
 

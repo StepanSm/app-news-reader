@@ -28,7 +28,6 @@ class AboutAppFragment : BaseFragment(R.layout.fragment_about_app) {
             coil.setOnClickListener { openBrowser("https://github.com/coil-kt/coil") }
             recycling.setOnClickListener { openBrowser("https://github.com/utsmannn/Recycling") }
             viewBindingDelegate.setOnClickListener { openBrowser("https://github.com/kirich1409/ViewBindingPropertyDelegate") }
-            errorHandler.setOnClickListener { openBrowser("https://github.com/mgray88/kotlin-error-handler") }
         }
     }
 
