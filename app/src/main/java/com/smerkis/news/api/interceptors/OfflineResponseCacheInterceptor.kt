@@ -10,6 +10,7 @@ class OfflineResponseCacheInterceptor : Interceptor {
     override fun intercept(chain: Interceptor.Chain): Response {
         var request = chain.request()
         if (!isNetworkAvailable()) {
+
             request = request.newBuilder()
                 .removeHeader("Pragma")
                 .header("Cache-Control", "public, only-if-cached, max-stale=" + 2419200)

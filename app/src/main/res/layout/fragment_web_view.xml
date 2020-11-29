@@ -3,32 +3,18 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
     android:fitsSystemWindows="true">
 
-    <com.google.android.material.appbar.AppBarLayout
-        android:id="@+id/app_bar"
-        android:background="@color/grey"
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/tb"
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
+        android:background="@color/tb_background"
+        android:elevation="3dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-
-        <androidx.appcompat.widget.Toolbar
-            android:id="@+id/toolbar"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-            <TextView
-                android:id="@+id/title"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:maxLines="1"
-                android:textSize="12sp" />
-
-        </androidx.appcompat.widget.Toolbar>
-
-    </com.google.android.material.appbar.AppBarLayout>
+        app:layout_constraintTop_toTopOf="parent" />
 
 
     <ProgressBar
@@ -40,7 +26,7 @@
         app:layout_behavior="@string/appbar_scrolling_view_behavior"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/app_bar" />
+        app:layout_constraintTop_toBottomOf="@+id/tb" />
 
     <WebView
         android:id="@+id/web_view"
@@ -49,6 +35,8 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp"
         app:layout_constraintTop_toBottomOf="@+id/pb" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -8,24 +8,41 @@
     android:background="@color/colorBackground"
     app:layoutDescription="@xml/fragment_article_scene">
 
-    <androidx.appcompat.widget.ActionMenuView
-        android:id="@+id/back_bottom"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintBottom_toTopOf="@+id/h_guideline"
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/tb"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/toolbar_bg"
+        app:layout_constraintBottom_toBottomOf="@+id/title"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent" >
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <View
+        android:id="@+id/elev"
+        app:layout_constraintTop_toBottomOf="@+id/tb"
+        android:background="@color/darkGrey"
+        app:layout_constraintStart_toStartOf="@+id/tb"
+        app:layout_constraintEnd_toEndOf="@+id/tb"
+        android:layout_width="0dp"
+        android:layout_height="1dp"/>
+
 
     <ImageView
-        android:id="@+id/toolbar_image"
+        android:id="@+id/image"
         android:layout_width="match_parent"
         android:layout_height="150dp"
         android:layout_marginTop="@dimen/margin_16"
         android:contentDescription="@null"
+        android:src="@drawable/ic_placeholder"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:src="@drawable/ic_placeholder" />
+        app:layout_constraintTop_toTopOf="parent" />
 
 
     <TextView
@@ -42,7 +59,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_chainStyle="packed"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/toolbar_image"
+        app:layout_constraintTop_toBottomOf="@id/image"
         tools:text="BBS NEWS" />
 
     <TextView
@@ -61,15 +78,6 @@
         app:layout_constraintTop_toBottomOf="@id/source"
         tools:text="Kotlin is expressive, concise, and powerful. Best of all, it's interoperable with the Java" />
 
-    <View
-        android:id="@+id/sep"
-        android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:background="@color/grey"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/title" />
-
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/fab"
         android:layout_width="wrap_content"
@@ -78,9 +86,9 @@
         android:elevation="4dp"
         android:lineSpacingExtra="2.2dp"
         android:src="@drawable/ic_share_24"
-        app:layout_constraintBottom_toBottomOf="@+id/sep"
+        app:layout_constraintBottom_toBottomOf="@+id/tb"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/sep" />
+        app:layout_constraintTop_toBottomOf="@+id/tb" />
 
     <TextView
         android:id="@+id/date"
@@ -90,7 +98,7 @@
         android:textColor="@color/black"
         android:textStyle="italic"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/sep"
+        app:layout_constraintTop_toBottomOf="@+id/tb"
         tools:text="14 september, 2020" />
 
 
@@ -136,13 +144,6 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
-
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/h_guideline"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        app:layout_constraintGuide_begin="?attr/actionBarSize" />
 
 
 </androidx.constraintlayout.motion.widget.MotionLayout>

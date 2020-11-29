@@ -3,9 +3,7 @@ package com.smerkis.news.repo
 import com.smerkis.news.api.NewsApi
 import com.smerkis.news.model.NewsResponse
 import com.smerkis.news.utils.Constants.Companion.API_KEY
-import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.flow.flow
-import kotlinx.coroutines.flow.flowOn
 
 class NewsRepository(
     private val newsApi: NewsApi,
@@ -16,10 +14,10 @@ class NewsRepository(
     }
 
     override suspend fun getTopHeadLinesForCategory(category: String): NewsResponse {
-        return newsApi.getTopHeadLinesForCategory(category, "ru", API_KEY)
+        return newsApi.getTopHeadLinesForCategory(category, "us", API_KEY)
     }
 
-    override suspend fun getSearchResult(searchRequest: String) = flow {
-        emit(newsApi.getSearchResults(searchRequest, "publishedAt","ru", API_KEY).articles)
+    override suspend fun getSearchResult(searchRequest: String, page: Int) = flow {
+        emit(newsApi.getSearchResults(searchRequest, "publishedAt", page, "en", API_KEY).articles)
     }
 }

@@ -1,9 +1,5 @@
 [
     {
-        "merged": "/home/stepan/AndroidStudioProjects/NEWS/app/build/intermediates/res/merged/debug/drawable_ic_close.xml.flat",
-        "source": "/home/stepan/AndroidStudioProjects/NEWS/app/src/main/res/drawable/ic_close.xml"
-    },
-    {
         "merged": "/home/stepan/AndroidStudioProjects/NEWS/app/build/intermediates/res/merged/debug/drawable_news_logo.png.flat",
         "source": "/home/stepan/AndroidStudioProjects/NEWS/app/src/main/res/drawable/news_logo.png"
     },
@@ -36,6 +32,10 @@
         "source": "/home/stepan/AndroidStudioProjects/NEWS/app/src/main/res/navigation/navigation.xml"
     },
     {
+        "merged": "/home/stepan/AndroidStudioProjects/NEWS/app/build/intermediates/res/merged/debug/drawable_ripple_effect.xml.flat",
+        "source": "/home/stepan/AndroidStudioProjects/NEWS/app/src/main/res/drawable/ripple_effect.xml"
+    },
+    {
         "merged": "/home/stepan/AndroidStudioProjects/NEWS/app/build/intermediates/res/merged/debug/layout_rv_news_feed.xml.flat",
         "source": "/home/stepan/AndroidStudioProjects/NEWS/app/src/main/res/layout/rv_news_feed.xml"
     },
@@ -44,16 +44,8 @@
         "source": "/home/stepan/AndroidStudioProjects/NEWS/app/src/main/res/mipmap-mdpi/ic_launcher.png"
     },
     {
-        "merged": "/home/stepan/AndroidStudioProjects/NEWS/app/build/intermediates/res/merged/debug/layout_library_item.xml.flat",
-        "source": "/home/stepan/AndroidStudioProjects/NEWS/app/src/main/res/layout/library_item.xml"
-    },
-    {
         "merged": "/home/stepan/AndroidStudioProjects/NEWS/app/build/intermediates/res/merged/debug/xml_fragment_main_scene.xml.flat",
         "source": "/home/stepan/AndroidStudioProjects/NEWS/app/src/main/res/xml/fragment_main_scene.xml"
-    },
-    {
-        "merged": "/home/stepan/AndroidStudioProjects/NEWS/app/build/intermediates/res/merged/debug/menu_back_stack.xml.flat",
-        "source": "/home/stepan/AndroidStudioProjects/NEWS/app/src/main/res/menu/back_stack.xml"
     },
     {
         "merged": "/home/stepan/AndroidStudioProjects/NEWS/app/build/intermediates/res/merged/debug/mipmap-mdpi_ic_launcher_round.png.flat",
@@ -64,16 +56,12 @@
         "source": "/home/stepan/AndroidStudioProjects/NEWS/app/src/main/res/anim/push_out_right.xml"
     },
     {
-        "merged": "/home/stepan/AndroidStudioProjects/NEWS/app/build/intermediates/res/merged/debug/drawable_ic_image.xml.flat",
-        "source": "/home/stepan/AndroidStudioProjects/NEWS/app/src/main/res/drawable/ic_image.xml"
-    },
-    {
         "merged": "/home/stepan/AndroidStudioProjects/NEWS/app/build/intermediates/res/merged/debug/anim_push_out_left.xml.flat",
         "source": "/home/stepan/AndroidStudioProjects/NEWS/app/src/main/res/anim/push_out_left.xml"
     },
     {
-        "merged": "/home/stepan/AndroidStudioProjects/NEWS/app/build/intermediates/res/merged/debug/drawable_ic_message_24.xml.flat",
-        "source": "/home/stepan/AndroidStudioProjects/NEWS/app/src/main/res/drawable/ic_message_24.xml"
+        "merged": "/home/stepan/AndroidStudioProjects/NEWS/app/build/intermediates/res/merged/debug/drawable_toolbar_bg.xml.flat",
+        "source": "/home/stepan/AndroidStudioProjects/NEWS/app/src/main/res/drawable/toolbar_bg.xml"
     },
     {
         "merged": "/home/stepan/AndroidStudioProjects/NEWS/app/build/intermediates/res/merged/debug/anim_pull_in_left.xml.flat",
@@ -82,6 +70,10 @@
     {
         "merged": "/home/stepan/AndroidStudioProjects/NEWS/app/build/intermediates/res/merged/debug/layout_fragment_article.xml.flat",
         "source": "/home/stepan/AndroidStudioProjects/NEWS/app/src/main/res/layout/fragment_article.xml"
+    },
+    {
+        "merged": "/home/stepan/AndroidStudioProjects/NEWS/app/build/intermediates/res/merged/debug/layout_content_about.xml.flat",
+        "source": "/home/stepan/AndroidStudioProjects/NEWS/app/src/main/res/layout/content_about.xml"
     },
     {
         "merged": "/home/stepan/AndroidStudioProjects/NEWS/app/build/intermediates/res/merged/debug/anim_pull_in_right.xml.flat",
@@ -98,6 +90,10 @@
     {
         "merged": "/home/stepan/AndroidStudioProjects/NEWS/app/build/intermediates/res/merged/debug/layout_fragment_search.xml.flat",
         "source": "/home/stepan/AndroidStudioProjects/NEWS/app/src/main/res/layout/fragment_search.xml"
+    },
+    {
+        "merged": "/home/stepan/AndroidStudioProjects/NEWS/app/build/intermediates/res/merged/debug/drawable_ic_message.xml.flat",
+        "source": "/home/stepan/AndroidStudioProjects/NEWS/app/src/main/res/drawable/ic_message.xml"
     },
     {
         "merged": "/home/stepan/AndroidStudioProjects/NEWS/app/build/intermediates/res/merged/debug/mipmap-xxhdpi_ic_launcher.png.flat",
@@ -128,20 +124,16 @@
         "source": "/home/stepan/AndroidStudioProjects/NEWS/app/src/main/res/drawable/ic_launcher_background.xml"
     },
     {
-        "merged": "/home/stepan/AndroidStudioProjects/NEWS/app/build/intermediates/res/merged/debug/anim_up_from_bottom.xml.flat",
-        "source": "/home/stepan/AndroidStudioProjects/NEWS/app/src/main/res/anim/up_from_bottom.xml"
-    },
-    {
         "merged": "/home/stepan/AndroidStudioProjects/NEWS/app/build/intermediates/res/merged/debug/mipmap-xhdpi_ic_launcher_round.png.flat",
         "source": "/home/stepan/AndroidStudioProjects/NEWS/app/src/main/res/mipmap-xhdpi/ic_launcher_round.png"
     },
     {
-        "merged": "/home/stepan/AndroidStudioProjects/NEWS/app/build/intermediates/res/merged/debug/menu_menu_search.xml.flat",
-        "source": "/home/stepan/AndroidStudioProjects/NEWS/app/src/main/res/menu/menu_search.xml"
+        "merged": "/home/stepan/AndroidStudioProjects/NEWS/app/build/intermediates/res/merged/debug/anim_up_from_bottom.xml.flat",
+        "source": "/home/stepan/AndroidStudioProjects/NEWS/app/src/main/res/anim/up_from_bottom.xml"
     },
     {
-        "merged": "/home/stepan/AndroidStudioProjects/NEWS/app/build/intermediates/res/merged/debug/drawable_ic_back_btn.xml.flat",
-        "source": "/home/stepan/AndroidStudioProjects/NEWS/app/src/main/res/drawable/ic_back_btn.xml"
+        "merged": "/home/stepan/AndroidStudioProjects/NEWS/app/build/intermediates/res/merged/debug/drawable_ic_outline.xml.flat",
+        "source": "/home/stepan/AndroidStudioProjects/NEWS/app/src/main/res/drawable/ic_outline.xml"
     },
     {
         "merged": "/home/stepan/AndroidStudioProjects/NEWS/app/build/intermediates/res/merged/debug/anim_down_from_top.xml.flat",
@@ -152,12 +144,20 @@
         "source": "/home/stepan/AndroidStudioProjects/NEWS/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml"
     },
     {
+        "merged": "/home/stepan/AndroidStudioProjects/NEWS/app/build/intermediates/res/merged/debug/drawable_id_source.xml.flat",
+        "source": "/home/stepan/AndroidStudioProjects/NEWS/app/src/main/res/drawable/id_source.xml"
+    },
+    {
         "merged": "/home/stepan/AndroidStudioProjects/NEWS/app/build/intermediates/res/merged/debug/mipmap-xxxhdpi_ic_launcher.png.flat",
         "source": "/home/stepan/AndroidStudioProjects/NEWS/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png"
     },
     {
         "merged": "/home/stepan/AndroidStudioProjects/NEWS/app/build/intermediates/res/merged/debug/mipmap-xhdpi_ic_launcher.png.flat",
         "source": "/home/stepan/AndroidStudioProjects/NEWS/app/src/main/res/mipmap-xhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/home/stepan/AndroidStudioProjects/NEWS/app/build/intermediates/res/merged/debug/drawable_ic_up_home.xml.flat",
+        "source": "/home/stepan/AndroidStudioProjects/NEWS/app/src/main/res/drawable/ic_up_home.xml"
     },
     {
         "merged": "/home/stepan/AndroidStudioProjects/NEWS/app/build/intermediates/res/merged/debug/color_button_text_color.xml.flat",

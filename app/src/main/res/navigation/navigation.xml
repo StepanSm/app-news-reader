@@ -51,7 +51,9 @@
         tools:layout="@layout/fragment_about_app"
         android:id="@+id/aboutAppFragment"
         android:name="com.smerkis.news.ui.AboutAppFragment"
-        android:label="AboutAppFragment" />
+        android:label="AboutAppFragment" >
+
+    </fragment>
     <fragment
         tools:layout="@layout/fragment_search"
         android:id="@+id/searchFragment"
@@ -74,4 +76,5 @@
             android:name="url"
             app:argType="string" />
     </fragment>
+
 </navigation>

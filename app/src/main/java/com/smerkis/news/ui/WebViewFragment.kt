@@ -1,6 +1,6 @@
 package com.smerkis.news.ui
 
-import android.graphics.Bitmap
+import android.annotation.SuppressLint
 import android.os.Bundle
 import android.view.MotionEvent
 import android.view.View
@@ -15,75 +15,45 @@ class WebViewFragment : BaseFragment(R.layout.fragment_web_view) {
 
     private val binding: FragmentWebViewBinding by viewBinding(FragmentWebViewBinding::bind)
     private val args by navArgs<WebViewFragmentArgs>()
-    private val webView get() = binding.webView
     private var downX: Float = -1F
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        createToolbar()
-        if (savedInstanceState == null) {
-            binding.webView.loadUrl(args.url)
-            initWevView()
-        }
+        createToolbar(binding.tb, true, args.url)
+        initWevView()
     }
 
+    @SuppressLint("ClickableViewAccessibility", "SetJavaScriptEnabled")
     private fun initWevView() {
-        webView.webChromeClient = WebChromeClient()
-        webView.webViewClient = object : WebViewClient() {
-
-            override fun onPageStarted(view: WebView?, url: String?, favicon: Bitmap?) {
-                super.onPageStarted(view, url, favicon)
-                binding.pb.visibility = View.VISIBLE
-            }
-
-            override fun shouldOverrideUrlLoading(
-                view: WebView?,
-                request: WebResourceRequest?
-            ): Boolean {
-                webView.loadUrl(args.url)
-                binding.pb.visibility = View.GONE
-                return true
-            }
-
-            override fun onPageFinished(view: WebView?, url: String?) {
-                super.onPageFinished(view, url)
-                binding.pb.visibility = View.GONE
-            }
-        }
-
-        webView.apply {
+        binding.webView.apply {
+            webChromeClient = WebChromeClient()
+            webViewClient = WebViewClient()
+            CookieManager.getInstance().setAcceptCookie(true)
+            settings.databaseEnabled = true
             clearCache(true)
+            settings.domStorageEnabled = true
             clearHistory()
             settings.javaScriptEnabled = true
             isHorizontalScrollBarEnabled = false
 
-        }
-        webView.setOnTouchListener { v, event ->
-            if (event.pointerCount > 1) {
-                return@setOnTouchListener true
-            }
 
-            when (event.action) {
-                MotionEvent.ACTION_DOWN -> downX = event.getX()
-                MotionEvent.ACTION_MOVE,
-                MotionEvent.ACTION_CANCEL,
-                MotionEvent.ACTION_UP -> event.setLocation(downX, event.getY())
-            }
-            return@setOnTouchListener false
-        }
-    }
+            setOnTouchListener { v, event ->
+                if (event.pointerCount > 1) {
+                    return@setOnTouchListener true
+                }
 
-
-    private fun createToolbar() {
-        activity.setSupportActionBar(binding.toolbar)
-        activity.actionBar?.setDisplayHomeAsUpEnabled(true)
-        binding.toolbar.apply {
-            setNavigationIcon(R.drawable.ic_back_btn)
-            title = args.url
-            setNavigationOnClickListener {
-                popBackStack()
+                when (event.action) {
+                    MotionEvent.ACTION_DOWN -> downX = event.x
+                    MotionEvent.ACTION_MOVE,
+                    MotionEvent.ACTION_CANCEL,
+                    MotionEvent.ACTION_UP -> {
+                        event.setLocation(downX, event.y)
+                        v.performClick()
+                    }
+                }
+                return@setOnTouchListener false
             }
+            loadUrl(args.url)
         }
     }
-
 }

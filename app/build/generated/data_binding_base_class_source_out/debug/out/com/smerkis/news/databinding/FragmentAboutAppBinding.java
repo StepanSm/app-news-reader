@@ -8,7 +8,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-import androidx.appcompat.widget.AppCompatButton;
+import androidx.appcompat.widget.Toolbar;
 import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.viewbinding.ViewBinding;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
@@ -28,36 +28,41 @@ public final class FragmentAboutAppBinding implements ViewBinding {
   public final TextView appName;
 
   @NonNull
-  public final TextView description;
-
-  @NonNull
-  public final View divider;
+  public final View elev;
 
   @NonNull
   public final FloatingActionButton fab;
 
   @NonNull
-  public final AppCompatButton goWebView;
+  public final ImageView image;
+
+  @NonNull
+  public final ContentAboutBinding libraries;
 
   @NonNull
   public final ConstraintLayout motionLayout;
 
   @NonNull
-  public final ImageView toolbarImage;
+  public final TextView newsSource;
+
+  @NonNull
+  public final Toolbar toolbar;
 
   private FragmentAboutAppBinding(@NonNull ConstraintLayout rootView, @NonNull TextView aboutApp,
-      @NonNull TextView appName, @NonNull TextView description, @NonNull View divider,
-      @NonNull FloatingActionButton fab, @NonNull AppCompatButton goWebView,
-      @NonNull ConstraintLayout motionLayout, @NonNull ImageView toolbarImage) {
+      @NonNull TextView appName, @NonNull View elev, @NonNull FloatingActionButton fab,
+      @NonNull ImageView image, @NonNull ContentAboutBinding libraries,
+      @NonNull ConstraintLayout motionLayout, @NonNull TextView newsSource,
+      @NonNull Toolbar toolbar) {
     this.rootView = rootView;
     this.aboutApp = aboutApp;
     this.appName = appName;
-    this.description = description;
-    this.divider = divider;
+    this.elev = elev;
     this.fab = fab;
-    this.goWebView = goWebView;
+    this.image = image;
+    this.libraries = libraries;
     this.motionLayout = motionLayout;
-    this.toolbarImage = toolbarImage;
+    this.newsSource = newsSource;
+    this.toolbar = toolbar;
   }
 
   @Override
@@ -99,15 +104,9 @@ public final class FragmentAboutAppBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.description;
-      TextView description = rootView.findViewById(id);
-      if (description == null) {
-        break missingId;
-      }
-
-      id = R.id.divider;
-      View divider = rootView.findViewById(id);
-      if (divider == null) {
+      id = R.id.elev;
+      View elev = rootView.findViewById(id);
+      if (elev == null) {
         break missingId;
       }
 
@@ -117,22 +116,35 @@ public final class FragmentAboutAppBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.go_web_view;
-      AppCompatButton goWebView = rootView.findViewById(id);
-      if (goWebView == null) {
+      id = R.id.image;
+      ImageView image = rootView.findViewById(id);
+      if (image == null) {
         break missingId;
       }
+
+      id = R.id.libraries;
+      View libraries = rootView.findViewById(id);
+      if (libraries == null) {
+        break missingId;
+      }
+      ContentAboutBinding binding_libraries = ContentAboutBinding.bind(libraries);
 
       ConstraintLayout motionLayout = (ConstraintLayout) rootView;
 
-      id = R.id.toolbar_image;
-      ImageView toolbarImage = rootView.findViewById(id);
-      if (toolbarImage == null) {
+      id = R.id.news_source;
+      TextView newsSource = rootView.findViewById(id);
+      if (newsSource == null) {
         break missingId;
       }
 
-      return new FragmentAboutAppBinding((ConstraintLayout) rootView, aboutApp, appName,
-          description, divider, fab, goWebView, motionLayout, toolbarImage);
+      id = R.id.toolbar;
+      Toolbar toolbar = rootView.findViewById(id);
+      if (toolbar == null) {
+        break missingId;
+      }
+
+      return new FragmentAboutAppBinding((ConstraintLayout) rootView, aboutApp, appName, elev, fab,
+          image, binding_libraries, motionLayout, newsSource, toolbar);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

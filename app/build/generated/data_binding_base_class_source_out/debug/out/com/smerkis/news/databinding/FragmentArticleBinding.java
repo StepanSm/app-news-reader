@@ -8,10 +8,9 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-import androidx.appcompat.widget.ActionMenuView;
 import androidx.appcompat.widget.AppCompatButton;
+import androidx.appcompat.widget.Toolbar;
 import androidx.constraintlayout.motion.widget.MotionLayout;
-import androidx.constraintlayout.widget.Guideline;
 import androidx.viewbinding.ViewBinding;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.smerkis.news.R;
@@ -24,9 +23,6 @@ public final class FragmentArticleBinding implements ViewBinding {
   private final MotionLayout rootView;
 
   @NonNull
-  public final ActionMenuView backBottom;
-
-  @NonNull
   public final TextView content;
 
   @NonNull
@@ -36,47 +32,46 @@ public final class FragmentArticleBinding implements ViewBinding {
   public final TextView description;
 
   @NonNull
+  public final View elev;
+
+  @NonNull
   public final FloatingActionButton fab;
 
   @NonNull
   public final AppCompatButton goWebView;
 
   @NonNull
-  public final Guideline hGuideline;
+  public final ImageView image;
 
   @NonNull
   public final MotionLayout motionLayout;
 
   @NonNull
-  public final View sep;
+  public final TextView source;
 
   @NonNull
-  public final TextView source;
+  public final Toolbar tb;
 
   @NonNull
   public final TextView title;
 
-  @NonNull
-  public final ImageView toolbarImage;
-
-  private FragmentArticleBinding(@NonNull MotionLayout rootView, @NonNull ActionMenuView backBottom,
-      @NonNull TextView content, @NonNull TextView date, @NonNull TextView description,
+  private FragmentArticleBinding(@NonNull MotionLayout rootView, @NonNull TextView content,
+      @NonNull TextView date, @NonNull TextView description, @NonNull View elev,
       @NonNull FloatingActionButton fab, @NonNull AppCompatButton goWebView,
-      @NonNull Guideline hGuideline, @NonNull MotionLayout motionLayout, @NonNull View sep,
-      @NonNull TextView source, @NonNull TextView title, @NonNull ImageView toolbarImage) {
+      @NonNull ImageView image, @NonNull MotionLayout motionLayout, @NonNull TextView source,
+      @NonNull Toolbar tb, @NonNull TextView title) {
     this.rootView = rootView;
-    this.backBottom = backBottom;
     this.content = content;
     this.date = date;
     this.description = description;
+    this.elev = elev;
     this.fab = fab;
     this.goWebView = goWebView;
-    this.hGuideline = hGuideline;
+    this.image = image;
     this.motionLayout = motionLayout;
-    this.sep = sep;
     this.source = source;
+    this.tb = tb;
     this.title = title;
-    this.toolbarImage = toolbarImage;
   }
 
   @Override
@@ -106,12 +101,6 @@ public final class FragmentArticleBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.back_bottom;
-      ActionMenuView backBottom = rootView.findViewById(id);
-      if (backBottom == null) {
-        break missingId;
-      }
-
       id = R.id.content;
       TextView content = rootView.findViewById(id);
       if (content == null) {
@@ -130,6 +119,12 @@ public final class FragmentArticleBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.elev;
+      View elev = rootView.findViewById(id);
+      if (elev == null) {
+        break missingId;
+      }
+
       id = R.id.fab;
       FloatingActionButton fab = rootView.findViewById(id);
       if (fab == null) {
@@ -142,23 +137,23 @@ public final class FragmentArticleBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.h_guideline;
-      Guideline hGuideline = rootView.findViewById(id);
-      if (hGuideline == null) {
+      id = R.id.image;
+      ImageView image = rootView.findViewById(id);
+      if (image == null) {
         break missingId;
       }
 
       MotionLayout motionLayout = (MotionLayout) rootView;
 
-      id = R.id.sep;
-      View sep = rootView.findViewById(id);
-      if (sep == null) {
-        break missingId;
-      }
-
       id = R.id.source;
       TextView source = rootView.findViewById(id);
       if (source == null) {
+        break missingId;
+      }
+
+      id = R.id.tb;
+      Toolbar tb = rootView.findViewById(id);
+      if (tb == null) {
         break missingId;
       }
 
@@ -168,14 +163,8 @@ public final class FragmentArticleBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.toolbar_image;
-      ImageView toolbarImage = rootView.findViewById(id);
-      if (toolbarImage == null) {
-        break missingId;
-      }
-
-      return new FragmentArticleBinding((MotionLayout) rootView, backBottom, content, date,
-          description, fab, goWebView, hGuideline, motionLayout, sep, source, title, toolbarImage);
+      return new FragmentArticleBinding((MotionLayout) rootView, content, date, description, elev,
+          fab, goWebView, image, motionLayout, source, tb, title);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

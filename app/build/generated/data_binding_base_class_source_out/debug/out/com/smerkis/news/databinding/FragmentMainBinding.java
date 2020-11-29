@@ -4,14 +4,12 @@ package com.smerkis.news.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ProgressBar;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.widget.Toolbar;
 import androidx.constraintlayout.motion.widget.MotionLayout;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewpager2.widget.ViewPager2;
-import com.google.android.material.appbar.AppBarLayout;
 import com.google.android.material.tabs.TabLayout;
 import com.smerkis.news.R;
 import java.lang.NullPointerException;
@@ -23,32 +21,23 @@ public final class FragmentMainBinding implements ViewBinding {
   private final MotionLayout rootView;
 
   @NonNull
-  public final AppBarLayout appBar;
-
-  @NonNull
   public final MotionLayout container;
-
-  @NonNull
-  public final ProgressBar pb;
 
   @NonNull
   public final TabLayout tabs;
 
   @NonNull
-  public final Toolbar toolbar;
+  public final Toolbar tb;
 
   @NonNull
   public final ViewPager2 vp;
 
-  private FragmentMainBinding(@NonNull MotionLayout rootView, @NonNull AppBarLayout appBar,
-      @NonNull MotionLayout container, @NonNull ProgressBar pb, @NonNull TabLayout tabs,
-      @NonNull Toolbar toolbar, @NonNull ViewPager2 vp) {
+  private FragmentMainBinding(@NonNull MotionLayout rootView, @NonNull MotionLayout container,
+      @NonNull TabLayout tabs, @NonNull Toolbar tb, @NonNull ViewPager2 vp) {
     this.rootView = rootView;
-    this.appBar = appBar;
     this.container = container;
-    this.pb = pb;
     this.tabs = tabs;
-    this.toolbar = toolbar;
+    this.tb = tb;
     this.vp = vp;
   }
 
@@ -79,19 +68,7 @@ public final class FragmentMainBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.app_bar;
-      AppBarLayout appBar = rootView.findViewById(id);
-      if (appBar == null) {
-        break missingId;
-      }
-
       MotionLayout container = (MotionLayout) rootView;
-
-      id = R.id.pb;
-      ProgressBar pb = rootView.findViewById(id);
-      if (pb == null) {
-        break missingId;
-      }
 
       id = R.id.tabs;
       TabLayout tabs = rootView.findViewById(id);
@@ -99,9 +76,9 @@ public final class FragmentMainBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.toolbar;
-      Toolbar toolbar = rootView.findViewById(id);
-      if (toolbar == null) {
+      id = R.id.tb;
+      Toolbar tb = rootView.findViewById(id);
+      if (tb == null) {
         break missingId;
       }
 
@@ -111,8 +88,7 @@ public final class FragmentMainBinding implements ViewBinding {
         break missingId;
       }
 
-      return new FragmentMainBinding((MotionLayout) rootView, appBar, container, pb, tabs, toolbar,
-          vp);
+      return new FragmentMainBinding((MotionLayout) rootView, container, tabs, tb, vp);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

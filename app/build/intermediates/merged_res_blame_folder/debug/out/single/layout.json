@@ -4,10 +4,6 @@
         "source": "/home/stepan/AndroidStudioProjects/NEWS/app/src/main/res/layout/rv_news_feed.xml"
     },
     {
-        "merged": "/home/stepan/AndroidStudioProjects/NEWS/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/library_item.xml",
-        "source": "/home/stepan/AndroidStudioProjects/NEWS/app/src/main/res/layout/library_item.xml"
-    },
-    {
         "merged": "/home/stepan/AndroidStudioProjects/NEWS/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/fragment_web_view.xml",
         "source": "/home/stepan/AndroidStudioProjects/NEWS/app/src/main/res/layout/fragment_web_view.xml"
     },
@@ -16,12 +12,12 @@
         "source": "/home/stepan/AndroidStudioProjects/NEWS/app/src/main/res/layout/fragment_article.xml"
     },
     {
-        "merged": "/home/stepan/AndroidStudioProjects/NEWS/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/item_article.xml",
-        "source": "/home/stepan/AndroidStudioProjects/NEWS/app/src/main/res/layout/item_article.xml"
+        "merged": "/home/stepan/AndroidStudioProjects/NEWS/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/content_about.xml",
+        "source": "/home/stepan/AndroidStudioProjects/NEWS/app/src/main/res/layout/content_about.xml"
     },
     {
-        "merged": "/home/stepan/AndroidStudioProjects/NEWS/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_main.xml",
-        "source": "/home/stepan/AndroidStudioProjects/NEWS/app/src/main/res/layout/activity_main.xml"
+        "merged": "/home/stepan/AndroidStudioProjects/NEWS/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/item_article.xml",
+        "source": "/home/stepan/AndroidStudioProjects/NEWS/app/src/main/res/layout/item_article.xml"
     },
     {
         "merged": "/home/stepan/AndroidStudioProjects/NEWS/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/fragment_about_app.xml",

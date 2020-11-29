@@ -18,11 +18,9 @@ class ItemClickSupport private constructor(private val recyclerView: RecyclerVie
             if (onItemClickListener != null && holder?.isClickable != false) {
                 view.setOnClickListener(onClickListener)
             }
-
         }
 
         override fun onChildViewDetachedFromWindow(view: View) {
-
         }
     }
 

@@ -2,28 +2,41 @@ package com.smerkis.news
 
 import android.app.AlertDialog
 import android.content.Context
-import android.os.Bundle
+import android.content.Intent
+import android.net.Uri
+import android.view.View
+import android.view.inputmethod.InputMethodManager
 import android.widget.Toast
+import androidx.appcompat.widget.Toolbar
 import androidx.fragment.app.Fragment
 import androidx.navigation.NavDirections
 import androidx.navigation.fragment.findNavController
 
 abstract class BaseFragment(layoutId: Int) : Fragment(layoutId) {
 
-    private var _activity: MainActivity? = null
-    protected val activity get() = _activity!!
+    protected fun activity() = activity as MainActivity
 
+    protected fun createToolbar(
+        toolbar: Toolbar,
+        shouldSetUpBtn: Boolean = true,
+        title: String = ""
+    ) {
+        toolbar.title = title
+        setHasOptionsMenu(true)
 
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        _activity = getActivity() as MainActivity
+        activity().setSupportActionBar(toolbar)
+        if (shouldSetUpBtn) {
+            activity?.actionBar?.setDisplayHomeAsUpEnabled(true)
 
+            toolbar.apply {
+                setNavigationIcon(R.drawable.ic_up_home)
+                setNavigationOnClickListener {
+                    popBackStack()
+                }
+            }
+        }
     }
 
-    override fun onDestroy() {
-        super.onDestroy()
-        _activity = null
-    }
     protected fun navigate(action: NavDirections) {
         findNavController().navigate(action)
     }
@@ -32,7 +45,10 @@ abstract class BaseFragment(layoutId: Int) : Fragment(layoutId) {
         findNavController().popBackStack()
     }
 
-    protected fun activity() = activity as MainActivity
+    protected fun openBrowser(url: String) {
+        val intent = Intent(Intent.ACTION_VIEW, Uri.parse(url))
+        startActivity(intent)
+    }
 
     fun showInfoDialog(title: String, message: String?, call: (() -> Unit)? = null) {
         AlertDialog.Builder(activity as Context)
@@ -52,6 +68,25 @@ abstract class BaseFragment(layoutId: Int) : Fragment(layoutId) {
 
     fun showLongToast(msg: String) {
         Toast.makeText(activity as Context, msg, Toast.LENGTH_LONG).show()
+    }
+
+    protected fun errorHandler(e: Throwable) {
+
+    }
+
+    protected fun showInputMethod(view: View) {
+        (activity().getSystemService(Context.INPUT_METHOD_SERVICE) as InputMethodManager).showSoftInput(
+            view,
+            0
+        )
+    }
+
+    override fun onStop() {
+        super.onStop()
+        (activity().getSystemService(Context.INPUT_METHOD_SERVICE) as InputMethodManager).hideSoftInputFromWindow(
+            view?.windowToken,
+            0
+        );
     }
 
 }

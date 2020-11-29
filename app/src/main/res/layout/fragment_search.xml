@@ -7,38 +7,28 @@
     android:layout_height="match_parent"
     android:fitsSystemWindows="true">
 
-    <com.google.android.material.appbar.AppBarLayout
-        android:id="@+id/app_bar"
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/tb"
         android:layout_width="match_parent"
         android:layout_height="?actionBarSize"
-        android:background="@android:color/white"
+        android:background="@color/tb_background"
+        android:elevation="4dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:theme="@style/ThemeOverlay.AppCompat.Light">
 
-        <androidx.appcompat.widget.Toolbar
-            android:id="@+id/toolbar"
+        <androidx.appcompat.widget.SearchView
+            android:id="@+id/search_view"
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-            <EditText
-                android:id="@+id/et_search"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:background="@android:color/transparent"
-                android:hint="@string/et_search_fragment__hint"
-                android:imeOptions="actionDone"
-                android:maxLines="1"
-                android:singleLine="true"
-                android:textColor="@android:color/black"
-                android:textColorHint="@android:color/darker_gray"
-                android:textCursorDrawable="@android:color/black"
-                android:textSize="18sp" />
-        </androidx.appcompat.widget.Toolbar>
+            android:layout_height="match_parent"
+            android:focusableInTouchMode="true"
+            android:iconifiedByDefault="true"
+            app:iconifiedByDefault="true"
+            app:showAsAction="always" />
 
 
-    </com.google.android.material.appbar.AppBarLayout>
+    </androidx.appcompat.widget.Toolbar>
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rv"
@@ -48,7 +38,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/app_bar" />
+        app:layout_constraintTop_toBottomOf="@+id/tb" />
 
     <TextView
         android:id="@+id/tv_no_results"

@@ -3,8 +3,6 @@ package com.smerkis.news.ui
 import android.content.Intent
 import android.net.Uri
 import android.os.Bundle
-import android.view.Menu
-import android.view.MenuInflater
 import android.view.View
 import androidx.navigation.fragment.navArgs
 import by.kirich1409.viewbindingdelegate.viewBinding
@@ -18,20 +16,12 @@ class ArticleFragment : BaseFragment(R.layout.fragment_article) {
     private val binding: FragmentArticleBinding by viewBinding(FragmentArticleBinding::bind)
     private val args by navArgs<ArticleFragmentArgs>()
 
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        setHasOptionsMenu(true)
-    }
-
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-
-        val menu = binding.backBottom.menu
-
-        activity.menuInflater.inflate(R.menu.back_stack, menu)
+        createToolbar(binding.tb, true)
 
         binding.apply {
-            toolbarImage.load(args.article.urlToImage)
+            image.load(args.article.urlToImage)
             source.text = args.article.source.name
             title.text = args.article.title
             date.text = args.article.publishedAt
@@ -43,9 +33,6 @@ class ArticleFragment : BaseFragment(R.layout.fragment_article) {
                         args.article.url
                     )
                 )
-            }
-            backBottom.setOnClickListener {
-                popBackStack()
             }
             fab.setOnClickListener {
                 sendArticle()
@@ -64,12 +51,4 @@ class ArticleFragment : BaseFragment(R.layout.fragment_article) {
         )
         startActivity(Intent.createChooser(shareIntent, "Share with"))
     }
-
-
-    override fun onCreateOptionsMenu(menu: Menu, inflater: MenuInflater) {
-        inflater.inflate(R.menu.back_stack, menu)
-        super.onCreateOptionsMenu(menu, inflater)
-    }
-
-
 }

@@ -10,6 +10,6 @@ interface NewsRepo {
 
     suspend fun getTopHeadLinesForCategory(category: String): NewsResponse
 
-    suspend fun getSearchResult(searchRequest: String): Flow<List<Article>>
+    suspend fun getSearchResult(searchRequest: String, page: Int): Flow<List<Article>>
 
 }

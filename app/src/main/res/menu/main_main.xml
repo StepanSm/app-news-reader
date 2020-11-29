@@ -2,14 +2,22 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    <item
-        android:id="@+id/action_menu"
-        android:title="@string/menu_title_about"
-        app:showAsAction="collapseActionView" />
+    <group>
+
+        <item
+            android:id="@+id/about_app"
+            android:icon="@drawable/ic_outline"
+            android:title="@string/main_menu__about_app"
+            app:showAsAction="withText|collapseActionView" />
+        <item
+            android:id="@+id/app_source"
+            android:icon="@drawable/id_source"
+            android:title="@string/main_menu__open_source" />
+    </group>
 
     <item
         android:id="@+id/action_search"
-        android:title="Search"
         android:icon="@drawable/ic_search"
-        app:showAsAction="ifRoom"/>
+        android:title="@string/main_menu__search"
+        app:showAsAction="ifRoom" />
 </menu>

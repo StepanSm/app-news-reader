@@ -1,58 +1,49 @@
 package com.smerkis.news.ui.adapter
 
-import android.view.LayoutInflater
-import android.view.View
-import android.view.ViewGroup
-import androidx.recyclerview.widget.RecyclerView
-import com.smerkis.news.databinding.RvNewsFeedBinding
-import com.smerkis.news.model.Article
-import com.smerkis.news.utils.Constants
+import androidx.fragment.app.Fragment
+import androidx.fragment.app.FragmentManager
+import androidx.lifecycle.Lifecycle
+import androidx.viewpager2.adapter.FragmentStateAdapter
+import com.smerkis.news.ui.NewsListFragment
+import com.smerkis.news.utils.Constants.Companion.CATEGORIES
 
 class VpAdapter(
-    var loader: (String) -> Unit,
-    var onClick: (Article) -> Unit
-) :
-    RecyclerView.Adapter<VpAdapter.Holder>() {
-    interface LoaderNews {
-        fun nextCategory(category: String)
+    private val fragmentManager: FragmentManager,
+    lifecycle: Lifecycle,
+) : FragmentStateAdapter(fragmentManager, lifecycle) {
+
+    private val currentPageIds = ArrayList<Int>()
+
+    override fun getItemCount() = 7
+
+
+    override fun createFragment(position: Int): Fragment {
+        val pageFragment = NewsListFragment.newInstance(CATEGORIES[position])
+        currentPageIds.add(position)
+        return pageFragment
     }
 
-    val newsByCategory = HashMap<String, List<Article>>()
-
-    override fun getItemCount() = Constants.CATEGORIES.size
-
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): Holder {
-        return Holder(
-            RvNewsFeedBinding.inflate(
-                LayoutInflater.from(parent.context),
-                parent,
-                false
-            )
-        )
+    override fun getItemId(position: Int): Long {
+        return position.toLong()
     }
 
-    override fun onBindViewHolder(holder: Holder, position: Int) {
-        val category = Constants.CATEGORIES[position]
-        if (newsByCategory[category] == null) {
-            loader(category)
-        } else {
-            ItemClickSupport.addTo(holder.binding.rv)
-                .onItemClick(object : OnRecyclerViewItemClickListener {
-                    override fun invoke(recyclerView: RecyclerView, position: Int, v: View) {
-                        newsByCategory[category]?.get(position)?.let {
-                            onClick(it)
-                        }
-                    }
-                })
-            holder.binding.rv.scheduleLayoutAnimation()
-            holder.binding.rv.adapter =
-                RvAdapter(newsByCategory[category]!!)
+
+    override fun containsItem(itemId: Long): Boolean {
+        for (id in currentPageIds) {
+            if (id.toLong() == itemId) {
+                currentPageIds.remove(itemId.toInt())
+                clearFragment(id)
+                break
+            }
         }
+        return super.containsItem(itemId)
     }
 
-    class Holder(val binding: RvNewsFeedBinding) :
-        RecyclerView.ViewHolder(binding.root) {
+    private fun clearFragment(fragmentId: Int) {
+        val transaction = fragmentManager.beginTransaction()
+        val fragment = fragmentManager.findFragmentByTag("f$fragmentId")
+        fragment?.let { transaction.remove(it) }
+        transaction.commitNowAllowingStateLoss()
     }
-
 }
 

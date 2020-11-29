@@ -1,7 +1,7 @@
 com/smerkis/news/databinding/RvNewsFeedBinding.java
  com.smerkis.news.databinding.RvNewsFeedBinding
-com/smerkis/news/databinding/ActivityMainBinding.java
- com.smerkis.news.databinding.ActivityMainBinding
+com/smerkis/news/databinding/ContentAboutBinding.java
+ com.smerkis.news.databinding.ContentAboutBinding
 com/smerkis/news/BuildConfig.java
  com.smerkis.news.BuildConfig
 com/smerkis/news/databinding/ItemRepoStateBinding.java
@@ -12,8 +12,6 @@ com/smerkis/news/databinding/FragmentArticleBinding.java
  com.smerkis.news.databinding.FragmentArticleBinding
 com/smerkis/news/databinding/FragmentAboutAppBinding.java
  com.smerkis.news.databinding.FragmentAboutAppBinding
-com/smerkis/news/databinding/LibraryItemBinding.java
- com.smerkis.news.databinding.LibraryItemBinding
 com/smerkis/news/databinding/FragmentWebViewBinding.java
  com.smerkis.news.databinding.FragmentWebViewBinding
 com/smerkis/news/databinding/FragmentMainBinding.java
