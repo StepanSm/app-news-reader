@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /home/stepan/AndroidStudioProjects/NEWS/app/src/main/AndroidManifest.xml:2:1-25:12
-INJECTED from /home/stepan/AndroidStudioProjects/NEWS/app/src/main/AndroidManifest.xml:2:1-25:12
-INJECTED from /home/stepan/AndroidStudioProjects/NEWS/app/src/main/AndroidManifest.xml:2:1-25:12
-INJECTED from /home/stepan/AndroidStudioProjects/NEWS/app/src/main/AndroidManifest.xml:2:1-25:12
+ADDED from /home/stepan/Downloads/app-news-reader/app/src/main/AndroidManifest.xml:2:1-25:12
+INJECTED from /home/stepan/Downloads/app-news-reader/app/src/main/AndroidManifest.xml:2:1-25:12
+INJECTED from /home/stepan/Downloads/app-news-reader/app/src/main/AndroidManifest.xml:2:1-25:12
+INJECTED from /home/stepan/Downloads/app-news-reader/app/src/main/AndroidManifest.xml:2:1-25:12
 MERGED from [com.kirich1409.viewbindingpropertydelegate:vbpd-noreflection:1.3.0] /home/stepan/.gradle/caches/transforms-2/files-2.1/e6f4186448e05ce6c3ede1a3fe02edac/jetified-vbpd-noreflection-1.3.0/AndroidManifest.xml:2:1-9:12
 MERGED from [androidx.databinding:viewbinding:4.1.1] /home/stepan/.gradle/caches/transforms-2/files-2.1/0fc722423c46f4019c496cdb47f9eb6e/jetified-viewbinding-4.1.1/AndroidManifest.xml:17:1-22:12
 MERGED from [com.utsman.recycling:recycling:1.3.8] /home/stepan/.gradle/caches/transforms-2/files-2.1/b29c1cf3248ced9333855dd43879446c/jetified-recycling-1.3.8/AndroidManifest.xml:7:1-16:12
@@ -71,33 +71,33 @@ MERGED from [androidx.arch.core:core-runtime:2.1.0] /home/stepan/.gradle/caches/
 MERGED from [androidx.exifinterface:exifinterface:1.3.1] /home/stepan/.gradle/caches/transforms-2/files-2.1/fad6056ad2059765e838d103a41669de/exifinterface-1.3.1/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /home/stepan/.gradle/caches/transforms-2/files-2.1/8e6b71034f22f57976e580c05aeb00f0/cursoradapter-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.annotation:annotation-experimental:1.0.0] /home/stepan/.gradle/caches/transforms-2/files-2.1/76be99f9e825b57c8eeb9874238bd79d/jetified-annotation-experimental-1.0.0/AndroidManifest.xml:17:1-24:12
-INJECTED from /home/stepan/AndroidStudioProjects/NEWS/app/src/main/AndroidManifest.xml:2:1-25:12
-INJECTED from /home/stepan/AndroidStudioProjects/NEWS/app/src/main/AndroidManifest.xml:2:1-25:12
-INJECTED from /home/stepan/AndroidStudioProjects/NEWS/app/src/main/AndroidManifest.xml:2:1-25:12
+INJECTED from /home/stepan/Downloads/app-news-reader/app/src/main/AndroidManifest.xml:2:1-25:12
+INJECTED from /home/stepan/Downloads/app-news-reader/app/src/main/AndroidManifest.xml:2:1-25:12
+INJECTED from /home/stepan/Downloads/app-news-reader/app/src/main/AndroidManifest.xml:2:1-25:12
 	package
-		ADDED from /home/stepan/AndroidStudioProjects/NEWS/app/src/main/AndroidManifest.xml:3:5-31
-		INJECTED from /home/stepan/AndroidStudioProjects/NEWS/app/src/main/AndroidManifest.xml
-		INJECTED from /home/stepan/AndroidStudioProjects/NEWS/app/src/main/AndroidManifest.xml
+		ADDED from /home/stepan/Downloads/app-news-reader/app/src/main/AndroidManifest.xml:3:5-31
+		INJECTED from /home/stepan/Downloads/app-news-reader/app/src/main/AndroidManifest.xml
+		INJECTED from /home/stepan/Downloads/app-news-reader/app/src/main/AndroidManifest.xml
 	android:versionName
-		INJECTED from /home/stepan/AndroidStudioProjects/NEWS/app/src/main/AndroidManifest.xml
-		ADDED from /home/stepan/AndroidStudioProjects/NEWS/app/src/main/AndroidManifest.xml:2:1-25:12
-		INJECTED from /home/stepan/AndroidStudioProjects/NEWS/app/src/main/AndroidManifest.xml
+		INJECTED from /home/stepan/Downloads/app-news-reader/app/src/main/AndroidManifest.xml
+		ADDED from /home/stepan/Downloads/app-news-reader/app/src/main/AndroidManifest.xml:2:1-25:12
+		INJECTED from /home/stepan/Downloads/app-news-reader/app/src/main/AndroidManifest.xml
 	android:versionCode
-		INJECTED from /home/stepan/AndroidStudioProjects/NEWS/app/src/main/AndroidManifest.xml
-		ADDED from /home/stepan/AndroidStudioProjects/NEWS/app/src/main/AndroidManifest.xml:2:1-25:12
-		INJECTED from /home/stepan/AndroidStudioProjects/NEWS/app/src/main/AndroidManifest.xml
+		INJECTED from /home/stepan/Downloads/app-news-reader/app/src/main/AndroidManifest.xml
+		ADDED from /home/stepan/Downloads/app-news-reader/app/src/main/AndroidManifest.xml:2:1-25:12
+		INJECTED from /home/stepan/Downloads/app-news-reader/app/src/main/AndroidManifest.xml
 	xmlns:android
-		ADDED from /home/stepan/AndroidStudioProjects/NEWS/app/src/main/AndroidManifest.xml:2:11-69
+		ADDED from /home/stepan/Downloads/app-news-reader/app/src/main/AndroidManifest.xml:2:11-69
 uses-permission#android.permission.INTERNET
-ADDED from /home/stepan/AndroidStudioProjects/NEWS/app/src/main/AndroidManifest.xml:5:5-67
+ADDED from /home/stepan/Downloads/app-news-reader/app/src/main/AndroidManifest.xml:5:5-67
 	android:name
-		ADDED from /home/stepan/AndroidStudioProjects/NEWS/app/src/main/AndroidManifest.xml:5:22-64
+		ADDED from /home/stepan/Downloads/app-news-reader/app/src/main/AndroidManifest.xml:5:22-64
 uses-permission#android.permission.ACCESS_NETWORK_STATE
-ADDED from /home/stepan/AndroidStudioProjects/NEWS/app/src/main/AndroidManifest.xml:6:5-79
+ADDED from /home/stepan/Downloads/app-news-reader/app/src/main/AndroidManifest.xml:6:5-79
 	android:name
-		ADDED from /home/stepan/AndroidStudioProjects/NEWS/app/src/main/AndroidManifest.xml:6:22-76
+		ADDED from /home/stepan/Downloads/app-news-reader/app/src/main/AndroidManifest.xml:6:22-76
 application
-ADDED from /home/stepan/AndroidStudioProjects/NEWS/app/src/main/AndroidManifest.xml:8:5-23:19
+ADDED from /home/stepan/Downloads/app-news-reader/app/src/main/AndroidManifest.xml:8:5-23:19
 MERGED from [org.koin:koin-androidx-viewmodel:2.2.0-rc-4] /home/stepan/.gradle/caches/transforms-2/files-2.1/1716d8758bdbac98628adb470e129691/jetified-koin-androidx-viewmodel-2.2.0-rc-4/AndroidManifest.xml:7:5-20
 MERGED from [org.koin:koin-androidx-viewmodel:2.2.0-rc-4] /home/stepan/.gradle/caches/transforms-2/files-2.1/1716d8758bdbac98628adb470e129691/jetified-koin-androidx-viewmodel-2.2.0-rc-4/AndroidManifest.xml:7:5-20
 MERGED from [org.koin:koin-androidx-scope:2.2.0-rc-4] /home/stepan/.gradle/caches/transforms-2/files-2.1/fe52f4eb4560cbf4bf7c6a7c255921e9/jetified-koin-androidx-scope-2.2.0-rc-4/AndroidManifest.xml:7:5-20
@@ -115,37 +115,37 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /home/stepa
 	android:appComponentFactory
 		ADDED from [androidx.core:core:1.5.0-alpha01] /home/stepan/.gradle/caches/transforms-2/files-2.1/86f8eccee746a94942c3d56b8a247962/core-1.5.0-alpha01/AndroidManifest.xml:24:18-86
 	android:supportsRtl
-		ADDED from /home/stepan/AndroidStudioProjects/NEWS/app/src/main/AndroidManifest.xml:14:9-35
+		ADDED from /home/stepan/Downloads/app-news-reader/app/src/main/AndroidManifest.xml:14:9-35
 	android:label
-		ADDED from /home/stepan/AndroidStudioProjects/NEWS/app/src/main/AndroidManifest.xml:12:9-41
+		ADDED from /home/stepan/Downloads/app-news-reader/app/src/main/AndroidManifest.xml:12:9-41
 	android:roundIcon
-		ADDED from /home/stepan/AndroidStudioProjects/NEWS/app/src/main/AndroidManifest.xml:13:9-54
+		ADDED from /home/stepan/Downloads/app-news-reader/app/src/main/AndroidManifest.xml:13:9-54
 	android:icon
-		ADDED from /home/stepan/AndroidStudioProjects/NEWS/app/src/main/AndroidManifest.xml:11:9-43
+		ADDED from /home/stepan/Downloads/app-news-reader/app/src/main/AndroidManifest.xml:11:9-43
 	android:allowBackup
-		ADDED from /home/stepan/AndroidStudioProjects/NEWS/app/src/main/AndroidManifest.xml:10:9-35
+		ADDED from /home/stepan/Downloads/app-news-reader/app/src/main/AndroidManifest.xml:10:9-35
 	android:theme
-		ADDED from /home/stepan/AndroidStudioProjects/NEWS/app/src/main/AndroidManifest.xml:15:9-42
+		ADDED from /home/stepan/Downloads/app-news-reader/app/src/main/AndroidManifest.xml:15:9-42
 	android:name
-		ADDED from /home/stepan/AndroidStudioProjects/NEWS/app/src/main/AndroidManifest.xml:9:9-30
+		ADDED from /home/stepan/Downloads/app-news-reader/app/src/main/AndroidManifest.xml:9:9-30
 activity#com.smerkis.news.MainActivity
-ADDED from /home/stepan/AndroidStudioProjects/NEWS/app/src/main/AndroidManifest.xml:16:9-22:20
+ADDED from /home/stepan/Downloads/app-news-reader/app/src/main/AndroidManifest.xml:16:9-22:20
 	android:name
-		ADDED from /home/stepan/AndroidStudioProjects/NEWS/app/src/main/AndroidManifest.xml:16:19-47
+		ADDED from /home/stepan/Downloads/app-news-reader/app/src/main/AndroidManifest.xml:16:19-47
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from /home/stepan/AndroidStudioProjects/NEWS/app/src/main/AndroidManifest.xml:17:13-21:29
+ADDED from /home/stepan/Downloads/app-news-reader/app/src/main/AndroidManifest.xml:17:13-21:29
 action#android.intent.action.MAIN
-ADDED from /home/stepan/AndroidStudioProjects/NEWS/app/src/main/AndroidManifest.xml:18:17-69
+ADDED from /home/stepan/Downloads/app-news-reader/app/src/main/AndroidManifest.xml:18:17-69
 	android:name
-		ADDED from /home/stepan/AndroidStudioProjects/NEWS/app/src/main/AndroidManifest.xml:18:25-66
+		ADDED from /home/stepan/Downloads/app-news-reader/app/src/main/AndroidManifest.xml:18:25-66
 category#android.intent.category.LAUNCHER
-ADDED from /home/stepan/AndroidStudioProjects/NEWS/app/src/main/AndroidManifest.xml:20:17-77
+ADDED from /home/stepan/Downloads/app-news-reader/app/src/main/AndroidManifest.xml:20:17-77
 	android:name
-		ADDED from /home/stepan/AndroidStudioProjects/NEWS/app/src/main/AndroidManifest.xml:20:27-74
+		ADDED from /home/stepan/Downloads/app-news-reader/app/src/main/AndroidManifest.xml:20:27-74
 uses-sdk
-INJECTED from /home/stepan/AndroidStudioProjects/NEWS/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
-INJECTED from /home/stepan/AndroidStudioProjects/NEWS/app/src/main/AndroidManifest.xml
-INJECTED from /home/stepan/AndroidStudioProjects/NEWS/app/src/main/AndroidManifest.xml
+INJECTED from /home/stepan/Downloads/app-news-reader/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /home/stepan/Downloads/app-news-reader/app/src/main/AndroidManifest.xml
+INJECTED from /home/stepan/Downloads/app-news-reader/app/src/main/AndroidManifest.xml
 MERGED from [com.kirich1409.viewbindingpropertydelegate:vbpd-noreflection:1.3.0] /home/stepan/.gradle/caches/transforms-2/files-2.1/e6f4186448e05ce6c3ede1a3fe02edac/jetified-vbpd-noreflection-1.3.0/AndroidManifest.xml:5:5-7:41
 MERGED from [com.kirich1409.viewbindingpropertydelegate:vbpd-noreflection:1.3.0] /home/stepan/.gradle/caches/transforms-2/files-2.1/e6f4186448e05ce6c3ede1a3fe02edac/jetified-vbpd-noreflection-1.3.0/AndroidManifest.xml:5:5-7:41
 MERGED from [androidx.databinding:viewbinding:4.1.1] /home/stepan/.gradle/caches/transforms-2/files-2.1/0fc722423c46f4019c496cdb47f9eb6e/jetified-viewbinding-4.1.1/AndroidManifest.xml:20:5-44
@@ -280,13 +280,13 @@ MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /home/stepan/.gradle/ca
 MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /home/stepan/.gradle/caches/transforms-2/files-2.1/8e6b71034f22f57976e580c05aeb00f0/cursoradapter-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.annotation:annotation-experimental:1.0.0] /home/stepan/.gradle/caches/transforms-2/files-2.1/76be99f9e825b57c8eeb9874238bd79d/jetified-annotation-experimental-1.0.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.annotation:annotation-experimental:1.0.0] /home/stepan/.gradle/caches/transforms-2/files-2.1/76be99f9e825b57c8eeb9874238bd79d/jetified-annotation-experimental-1.0.0/AndroidManifest.xml:20:5-22:41
-INJECTED from /home/stepan/AndroidStudioProjects/NEWS/app/src/main/AndroidManifest.xml
-INJECTED from /home/stepan/AndroidStudioProjects/NEWS/app/src/main/AndroidManifest.xml
+INJECTED from /home/stepan/Downloads/app-news-reader/app/src/main/AndroidManifest.xml
+INJECTED from /home/stepan/Downloads/app-news-reader/app/src/main/AndroidManifest.xml
 	android:targetSdkVersion
-		INJECTED from /home/stepan/AndroidStudioProjects/NEWS/app/src/main/AndroidManifest.xml
-		ADDED from /home/stepan/AndroidStudioProjects/NEWS/app/src/main/AndroidManifest.xml
-		INJECTED from /home/stepan/AndroidStudioProjects/NEWS/app/src/main/AndroidManifest.xml
+		INJECTED from /home/stepan/Downloads/app-news-reader/app/src/main/AndroidManifest.xml
+		ADDED from /home/stepan/Downloads/app-news-reader/app/src/main/AndroidManifest.xml
+		INJECTED from /home/stepan/Downloads/app-news-reader/app/src/main/AndroidManifest.xml
 	android:minSdkVersion
-		INJECTED from /home/stepan/AndroidStudioProjects/NEWS/app/src/main/AndroidManifest.xml
-		ADDED from /home/stepan/AndroidStudioProjects/NEWS/app/src/main/AndroidManifest.xml
-		INJECTED from /home/stepan/AndroidStudioProjects/NEWS/app/src/main/AndroidManifest.xml
+		INJECTED from /home/stepan/Downloads/app-news-reader/app/src/main/AndroidManifest.xml
+		ADDED from /home/stepan/Downloads/app-news-reader/app/src/main/AndroidManifest.xml
+		INJECTED from /home/stepan/Downloads/app-news-reader/app/src/main/AndroidManifest.xml

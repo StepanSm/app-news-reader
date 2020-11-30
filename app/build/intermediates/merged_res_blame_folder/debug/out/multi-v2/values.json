@@ -1,27 +1,8 @@
 {
     "logs": [
         {
-            "outputFile": "/home/stepan/AndroidStudioProjects/NEWS/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values/values.xml",
+            "outputFile": "/home/stepan/Downloads/app-news-reader/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values/values.xml",
             "map": [
-                {
-                    "source": "/home/stepan/AndroidStudioProjects/NEWS/app/src/main/res/values/themes.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "100",
-                        "endLines": "17",
-                        "endColumns": "12",
-                        "endOffsets": "872"
-                    },
-                    "to": {
-                        "startLines": "3719",
-                        "startColumns": "4",
-                        "startOffsets": "244609",
-                        "endLines": "3734",
-                        "endColumns": "12",
-                        "endOffsets": "245379"
-                    }
-                },
                 {
                     "source": "/home/stepan/.gradle/caches/transforms-2/files-2.1/117e1bf7ef4065fa1e2b85fab1cf20b4/appcompat-1.3.0-alpha01/res/values/values.xml",
                     "from": {
@@ -42,6 +23,42 @@
                     }
                 },
                 {
+                    "source": "/home/stepan/Downloads/app-news-reader/app/src/main/res/values/colors.xml",
+                    "from": {
+                        "startLines": "8,10,13,6,17,15,16,12,11,2,3,4,14,5,7,9",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "330,414,542,239,738,640,687,499,460,55,102,149,592,194,285,372",
+                        "endColumns": "41,45,49,45,53,46,50,42,38,46,46,44,47,44,44,41",
+                        "endOffsets": "367,455,587,280,787,682,733,537,494,97,144,189,635,234,325,409"
+                    },
+                    "to": {
+                        "startLines": "394,407,408,409,410,411,412,413,457,490,491,492,503,504,505,508",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "18842,19774,19820,19870,19916,19970,20017,20068,23080,25211,25258,25305,26047,26095,26140,26306",
+                        "endColumns": "41,45,49,45,53,46,50,42,38,46,46,44,47,44,44,41",
+                        "endOffsets": "18879,19815,19865,19911,19965,20012,20063,20106,23114,25253,25300,25345,26090,26135,26180,26343"
+                    }
+                },
+                {
+                    "source": "/home/stepan/Downloads/app-news-reader/app/src/main/res/values/themes.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "100",
+                        "endLines": "17",
+                        "endColumns": "12",
+                        "endOffsets": "872"
+                    },
+                    "to": {
+                        "startLines": "3719",
+                        "startColumns": "4",
+                        "startOffsets": "244609",
+                        "endLines": "3734",
+                        "endColumns": "12",
+                        "endOffsets": "245379"
+                    }
+                },
+                {
                     "source": "/home/stepan/.gradle/caches/transforms-2/files-2.1/ae1edea9bff00d8db97ce70ddb253369/jetified-coil-base-1.0.0/res/values/values.xml",
                     "from": {
                         "startLines": "2",
@@ -56,23 +73,6 @@
                         "startOffsets": "52019",
                         "endColumns": "49",
                         "endOffsets": "52064"
-                    }
-                },
-                {
-                    "source": "/home/stepan/AndroidStudioProjects/NEWS/app/src/main/res/values/colors.xml",
-                    "from": {
-                        "startLines": "8,10,13,6,17,15,16,12,11,2,3,4,14,5,7,9",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "330,414,542,239,738,640,687,499,460,55,102,149,592,194,285,372",
-                        "endColumns": "41,45,49,45,53,46,50,42,38,46,46,44,47,44,44,41",
-                        "endOffsets": "367,455,587,280,787,682,733,537,494,97,144,189,635,234,325,409"
-                    },
-                    "to": {
-                        "startLines": "394,407,408,409,410,411,412,413,457,490,491,492,503,504,505,508",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "18842,19774,19820,19870,19916,19970,20017,20068,23080,25211,25258,25305,26047,26095,26140,26306",
-                        "endColumns": "41,45,49,45,53,46,50,42,38,46,46,44,47,44,44,41",
-                        "endOffsets": "18879,19815,19865,19911,19965,20012,20063,20106,23114,25253,25300,25345,26090,26135,26180,26343"
                     }
                 },
                 {
@@ -224,6 +224,23 @@
                     }
                 },
                 {
+                    "source": "/home/stepan/Downloads/app-news-reader/app/src/main/res/values/ids.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "48",
+                        "endOffsets": "99"
+                    },
+                    "to": {
+                        "startLines": "912",
+                        "startColumns": "4",
+                        "startOffsets": "52302",
+                        "endColumns": "47",
+                        "endOffsets": "52345"
+                    }
+                },
+                {
                     "source": "/home/stepan/.gradle/caches/transforms-2/files-2.1/4bdfd2341c8dd9309f1b13f84a842beb/lifecycle-runtime-2.3.0-beta01/res/values/values.xml",
                     "from": {
                         "startLines": "2",
@@ -296,25 +313,6 @@
                     }
                 },
                 {
-                    "source": "/home/stepan/AndroidStudioProjects/NEWS/app/src/main/res/values/styles.xml",
-                    "from": {
-                        "startLines": "3",
-                        "startColumns": "4",
-                        "startOffsets": "56",
-                        "endLines": "11",
-                        "endColumns": "12",
-                        "endOffsets": "504"
-                    },
-                    "to": {
-                        "startLines": "4707",
-                        "startColumns": "4",
-                        "startOffsets": "308708",
-                        "endLines": "4715",
-                        "endColumns": "12",
-                        "endOffsets": "309156"
-                    }
-                },
-                {
                     "source": "/home/stepan/.gradle/caches/transforms-2/files-2.1/d951df6d8a8d17a2c21f2b695767d188/transition-1.2.0/res/values/values.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11",
@@ -351,7 +349,26 @@
                     }
                 },
                 {
-                    "source": "/home/stepan/AndroidStudioProjects/NEWS/app/src/main/res/values/strings.xml",
+                    "source": "/home/stepan/Downloads/app-news-reader/app/src/main/res/values/styles.xml",
+                    "from": {
+                        "startLines": "3",
+                        "startColumns": "4",
+                        "startOffsets": "56",
+                        "endLines": "11",
+                        "endColumns": "12",
+                        "endOffsets": "504"
+                    },
+                    "to": {
+                        "startLines": "4707",
+                        "startColumns": "4",
+                        "startOffsets": "308708",
+                        "endLines": "4715",
+                        "endColumns": "12",
+                        "endOffsets": "309156"
+                    }
+                },
+                {
+                    "source": "/home/stepan/Downloads/app-news-reader/app/src/main/res/values/strings.xml",
                     "from": {
                         "startLines": "19,5,1,17,27,25,2,10,26,13,28,29,9,8,6,14,16,18,15,3,24,23,7,12,11,4",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -367,23 +384,6 @@
                         "endLines": "5,1015,1016,1019,1025,1026,1028,1035,1036,1037,1038,1039,1042,1078,1079,1080,1081,1087,1088,1089,1090,1091,1092,1094,1095,1096",
                         "endColumns": "19,69,41,45,62,69,56,88,62,62,62,52,46,98,90,85,41,71,45,39,73,51,52,60,49,73",
                         "endOffsets": "272,58432,58474,58801,59289,59359,59481,60339,60402,60465,60528,60581,60980,67567,67658,67744,67786,68660,68706,68746,68820,68872,68925,69057,69107,69181"
-                    }
-                },
-                {
-                    "source": "/home/stepan/AndroidStudioProjects/NEWS/app/src/main/res/values/ids.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "48",
-                        "endOffsets": "99"
-                    },
-                    "to": {
-                        "startLines": "912",
-                        "startColumns": "4",
-                        "startOffsets": "52302",
-                        "endColumns": "47",
-                        "endOffsets": "52345"
                     }
                 },
                 {
@@ -463,7 +463,7 @@
                     }
                 },
                 {
-                    "source": "/home/stepan/AndroidStudioProjects/NEWS/app/src/main/res/values/dimens.xml",
+                    "source": "/home/stepan/Downloads/app-news-reader/app/src/main/res/values/dimens.xml",
                     "from": {
                         "startLines": "2,11,10,3,14,9,13,5,12,4,8,7,6,15",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4",

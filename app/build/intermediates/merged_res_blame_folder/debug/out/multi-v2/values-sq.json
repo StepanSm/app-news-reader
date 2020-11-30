@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/home/stepan/AndroidStudioProjects/NEWS/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-sq/values-sq.xml",
+            "outputFile": "/home/stepan/Downloads/app-news-reader/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-sq/values-sq.xml",
             "map": [
                 {
                     "source": "/home/stepan/.gradle/caches/transforms-2/files-2.1/86f8eccee746a94942c3d56b8a247962/core-1.5.0-alpha01/res/values-sq/values-sq.xml",

@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/home/stepan/AndroidStudioProjects/NEWS/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-ka/values-ka.xml",
+            "outputFile": "/home/stepan/Downloads/app-news-reader/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-ka/values-ka.xml",
             "map": [
                 {
                     "source": "/home/stepan/.gradle/caches/transforms-2/files-2.1/117e1bf7ef4065fa1e2b85fab1cf20b4/appcompat-1.3.0-alpha01/res/values-ka/values-ka.xml",
