@@ -8,16 +8,16 @@
         "source": "/home/stepan/AndroidStudioProjects/NEWS/app/src/main/res/anim/layout_animation_fall_down.xml"
     },
     {
-        "merged": "/home/stepan/AndroidStudioProjects/NEWS/app/build/intermediates/res/merged/debug/mipmap-xxxhdpi_ic_launcher_round.png.flat",
-        "source": "/home/stepan/AndroidStudioProjects/NEWS/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png"
+        "merged": "/home/stepan/AndroidStudioProjects/NEWS/app/build/intermediates/res/merged/debug/drawable_ic_share_24.xml.flat",
+        "source": "/home/stepan/AndroidStudioProjects/NEWS/app/src/main/res/drawable/ic_share_24.xml"
     },
     {
         "merged": "/home/stepan/AndroidStudioProjects/NEWS/app/build/intermediates/res/merged/debug/xml_fragment_article_scene.xml.flat",
         "source": "/home/stepan/AndroidStudioProjects/NEWS/app/src/main/res/xml/fragment_article_scene.xml"
     },
     {
-        "merged": "/home/stepan/AndroidStudioProjects/NEWS/app/build/intermediates/res/merged/debug/drawable_ic_share_24.xml.flat",
-        "source": "/home/stepan/AndroidStudioProjects/NEWS/app/src/main/res/drawable/ic_share_24.xml"
+        "merged": "/home/stepan/AndroidStudioProjects/NEWS/app/build/intermediates/res/merged/debug/mipmap-xxxhdpi_ic_launcher_round.png.flat",
+        "source": "/home/stepan/AndroidStudioProjects/NEWS/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png"
     },
     {
         "merged": "/home/stepan/AndroidStudioProjects/NEWS/app/build/intermediates/res/merged/debug/drawable_ic_placeholder.png.flat",
@@ -48,12 +48,12 @@
         "source": "/home/stepan/AndroidStudioProjects/NEWS/app/src/main/res/xml/fragment_main_scene.xml"
     },
     {
-        "merged": "/home/stepan/AndroidStudioProjects/NEWS/app/build/intermediates/res/merged/debug/anim_push_out_right.xml.flat",
-        "source": "/home/stepan/AndroidStudioProjects/NEWS/app/src/main/res/anim/push_out_right.xml"
-    },
-    {
         "merged": "/home/stepan/AndroidStudioProjects/NEWS/app/build/intermediates/res/merged/debug/mipmap-mdpi_ic_launcher_round.png.flat",
         "source": "/home/stepan/AndroidStudioProjects/NEWS/app/src/main/res/mipmap-mdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "/home/stepan/AndroidStudioProjects/NEWS/app/build/intermediates/res/merged/debug/anim_push_out_right.xml.flat",
+        "source": "/home/stepan/AndroidStudioProjects/NEWS/app/src/main/res/anim/push_out_right.xml"
     },
     {
         "merged": "/home/stepan/AndroidStudioProjects/NEWS/app/build/intermediates/res/merged/debug/anim_push_out_left.xml.flat",
